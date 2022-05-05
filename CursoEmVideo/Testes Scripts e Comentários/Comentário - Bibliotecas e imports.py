@@ -3,7 +3,7 @@
 
 # import biblioteca - Usado para importar uma biblioteca e utilizar seus comandos.
 # from biblioteca import comando - Usado para importar comandos específicos de bibliotecas.
-# import pygame as pg - Em alguns casos de bibliotecas da comnidade, é necessário utilizar um apelido para elas ex: "as pg".
+# import pygame as pg - Em alguns casos de bibliotecas da comnidade, é necessário utilizar um apelido para elas ex: "as" = "vulgo".
 
 # Para visualizar algumas bibliotecas do python pre-instaladas, basta digitar 'import' e apertar o atalho de visualização "ctrl + space"
 # Uma lista com todas as bibliotecas de python pode ser vista em Pypi: https://pypi.org
