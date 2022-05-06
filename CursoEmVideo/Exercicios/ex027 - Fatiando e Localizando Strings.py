@@ -20,4 +20,3 @@ print()
 # print()
 # print('O último nome é: {}'.format(nome.split()[len(nome.split()) - 1]))
 # print()
-
