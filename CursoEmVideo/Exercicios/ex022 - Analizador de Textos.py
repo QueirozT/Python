@@ -4,14 +4,8 @@ print()
 nome = input('Digite o seu nome: ')
 print()
 
-print('O nome digitado em maiscula é: {}'.format(nome.upper()))
-print()
-
-print('O nome digitado em minuscula é: {}'.format(nome.lower()))
-print()
-
-novoNome = nome.split()
-print('A quantidade de letras do nome é: ', len(''.join(novoNome)))
-print()
-
-print('Apenas o primeiro nome tem {} letras.'.format(len(novoNome[0])))
+print('Analizando seu nome...')
+print('Seu nome em maiscula é: {}'.format(nome.upper()))
+print('Seu nome em minuscula é: {}'.format(nome.lower()))
+print('Seu nome ao todo tem {} letras.'.format(len(''.join(nome.split()))))
+print('Seu primeiro nome é {} e ele tem {} letras.'.format(nome.split()[0],len(nome.split()[0])))
