@@ -33,7 +33,7 @@ frase = 'Curso em Video de Python'
 
 len(frase) # Retorna o tamanho da string.
 
-'curso' in frase # O 'in' Retorna True ou False, ou seja, existe esta string dentro da variável frase.
+'curso' in frase # O 'in' é um operador e Retorna True ou False, ou seja, existe esta string dentro da variável.
 
 frase.count('o') # Retorna a quantidade de ocorrências de 'o' na string.
 frase.count('o', 0, 13) # Retorna a quantidade de ocorrências de 'o' na string, entre os índices 0 e 13.
