@@ -10,4 +10,5 @@ print()
 print('A primeira letra "A" aparece na posição {}.'.format(valor.upper().find('A')))
 print()
 
-print('A última letra "A" aparece na posição {}.'.format(valor.upper().rfind('A'))) 
+print('A última letra "A" aparece na posição {}.'.format(valor.upper().rfind('A')))
+print()
