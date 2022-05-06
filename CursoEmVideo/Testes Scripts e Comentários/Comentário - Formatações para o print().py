@@ -2,11 +2,20 @@
 
 # Para não quebrar linhas, use o end='' no final do print()
 
-
 # Para delimitar o tamanho de um float, dentro das chaves de formatação utilize {:.2f}
 
-# Para adicionar espaços extras contando a quantidade de caracteres da string, utilize {:^10}. para alinhar o texto a esquerda utilize {:<10} e para alinhar a direita utilize {:>10}. Para adicionar caracteres especiais, utilize {:=^10}
 
+# Para mostrar tudo exatamente como está sendo digitado até com quebra de linha, use áspas triplas dentro do print(''' texto ''').
+# EX:
+
+print(''' 
+Exemplo de frase
+com quebra
+de linha 
+''')
+
+
+# Para adicionar espaços extras contando a quantidade de caracteres da string, utilize {:^10}. para alinhar o texto a esquerda utilize {:<10} e para alinhar a direita utilize {:>10}. Para adicionar caracteres especiais, utilize {:=^10}
 # EX:
 
 altura = 1.7345
