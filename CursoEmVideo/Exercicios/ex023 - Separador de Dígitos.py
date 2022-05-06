@@ -4,21 +4,25 @@ print()
 valor = int(input('Digite um número entre 0 e 9999: '))
 print()
 
+print('Analisando o número...')
 print('O valor digitado foi: {}'.format(valor))
 
-print('Ele contém:')
+u = valor // 1 % 10
+d = valor // 10 % 10
+c = valor // 100 % 10
+m = valor // 1000 % 10
 
-print('Unidade: {}'.format(str(valor)[3]))
-print('Dezena: {}'.format(str(valor)[2]))
-print('Centena: {}'.format(str(valor)[1]))
-print('Milhar: {}'.format(str(valor)[0]))
+print('Unidade: {}'.format(u))
+print('Dezena: {}'.format(d))
+print('Centena: {}'.format(c))
+print('Milhar: {}'.format(m))
 print()
 
 
-# EXEMPLO MATEMÁTICO
+# EXEMPLO AVANÇADO (INCOMPLETO):
 
-# print('Unidade: {}'.format(valor % 10))
-# print('Dezena: {}'.format(valor % 100 // 10))
-# print('Centena: {}'.format(valor % 1000 // 100))
-# print('Milhar: {}'.format(valor // 1000))
+# print('Unidade: {}'.format(str(valor)[3]))
+# print('Dezena: {}'.format(str(valor)[2]))
+# print('Centena: {}'.format(str(valor)[1]))
+# print('Milhar: {}'.format(str(valor)[0]))
 # print()
