@@ -1,7 +1,7 @@
 print('===== Exercício 25 =====')
 print()
 
-nome = input('Digite o seu nome: ')
+nome = str(input('Digite o seu nome: ')).strip()
 print()
 
 if 'SILVA' in nome.upper():
@@ -9,3 +9,8 @@ if 'SILVA' in nome.upper():
 else:
     print('O nome "{}" não contém a palavra "Silva"'.format(nome))
     print()
+
+
+# RESULTADO ALTERNATIVO:
+
+# print('Contem Silva? {}'.format('SILVA' in nome.upper()))
