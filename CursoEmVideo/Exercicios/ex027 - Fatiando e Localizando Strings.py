@@ -4,13 +4,13 @@ print()
 nome = input('Digite o seu nome: ')
 print()
 
-print('O nome digitado foi: {}'.format(nome))
+print('Prazer em te conhecer!')
 print()
 
-print('O primeiro nome é: {}'.format(nome.split()[0]))
+print('O seu nome é: {}'.format(nome.split()[0]))
 print()
 
-print('O último nome é: {}'.format(nome.split()[-1]))
+print('O seu último nome é: {}'.format(nome.split()[-1]))
 print()
 
 
