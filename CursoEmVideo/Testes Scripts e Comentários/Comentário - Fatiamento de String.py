@@ -39,6 +39,7 @@ frase.count('o') # Retorna a quantidade de ocorrências de 'o' na string.
 frase.count('o', 0, 13) # Retorna a quantidade de ocorrências de 'o' na string, entre os índices 0 e 13.
 
 frase.find('deo') # Retorna o índice da primeira ocorrência de 'deo' na string.
+frase.rfind('deo') # Retorna o índice da última ocorrência de 'deo' na string.
 frase.find('Android') # Retorna -1, ou seja, não encontrou.
 
 
