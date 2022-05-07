@@ -2,11 +2,9 @@
 
 if True:
     print('Verdadeiro')
-else:
-    print('Falso')
 
 
-# CONDICIONAL COM DOIS OPERADORES
+# CONDICIONAL COMPOSTA COM DOIS OPERADORES
 
 if True and False:
     print('Verdadeiro')
@@ -14,7 +12,7 @@ else:
     print('Falso')
 
 
-# CONDICIONAL COM TRES OPERADORES
+# CONDICIONAL COMPOSTA COM TRES OPERADORES
 
 if True and False or True:
     print('Verdadeiro')
