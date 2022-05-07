@@ -22,7 +22,7 @@ else:
     print('Falso')
 
 
-# CONDICIONAL SIMPLIFICADA
+# CONDICIONAL SIMPLIFICADA ps: não existe condicional ternária no python
 
 print('Verdadeiro' if True else 'Falso') # EXEMPLO 01
 
@@ -37,4 +37,3 @@ elif False:
     print('Falso')
 else:
     print('Não sei')
-
