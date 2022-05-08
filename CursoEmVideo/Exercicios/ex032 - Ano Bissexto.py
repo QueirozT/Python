@@ -1,8 +1,13 @@
+from datetime import date
+
 print('===== EXERCÍCIO 32 =====')
 print()
 
-valor = input('Digite o ano que você deseja saber se é bissexto: ')
+valor = input('Que ano quer analizar? Coloque "0" para analizar o ano atual: ')
 print()
+
+if int(valor) == 0:
+    valor = str(date.today().year)
 
 # Se o valor for divisível por 4 e (não for divisível por 100 /ou for divisível 400), significa que é bissexto!
 if valor.isnumeric():
