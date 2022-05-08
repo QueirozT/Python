@@ -1,6 +1,11 @@
 print('===== EXERCÍCIO 35 =====')
 print()
 
+print('-=-' * 20)
+print('{:^60}'.format('Analizador de Triângulos'))
+print('-=-' * 20)
+print()
+
 v01 = float(input('Qual o comprimento da primeira reta? '))
 v02 = float(input('Qual o comprimento da segunda reta? '))
 v03 = float(input('Qual o comprimento da terceira reta? '))
