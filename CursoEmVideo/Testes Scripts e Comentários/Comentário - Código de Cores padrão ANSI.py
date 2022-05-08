@@ -6,12 +6,13 @@
 # Ex: 
 print('\033[6;30;41mOlá, mundo!\033[m')
 
-print('Olá, {}este é um teste de cores{}...'.format('\033[1;31;47m','\033[m'))
+print('Olá, {}este é um teste de cores{}...'.format('\033[4;34m','\033[m'))
 
 
 # ESTILOS:
 # 0 - Sem estilo
 # 1 - Negrito
+# 4 - Sublinhado
 # 7 - Invertido (Inverte cor de fundo e texto)
 
 # CORES:
