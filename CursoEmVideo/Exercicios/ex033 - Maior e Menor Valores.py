@@ -72,6 +72,23 @@ else:
 
 
 
+# SEGUNDA VERSÃO CRIADA (SIMPLIFICADA E USADA NA ÁULA):
+
+# maior = v01
+# if v02 > v01 and v02 > v03:
+#     maior = v02
+# if v03 > v01 and v03 > v02:
+#     maior = v03
+# menor = v01
+# if v02 < v01 and v02 < v03:
+#     menor = v02
+# if v03 < v01 and v03 < v02:
+#     menor = v03
+# print('O maior valor é {} e o menor valor é {}!'.format(maior, menor))
+# print()
+
+
+
 # PRIMEIRA VERSÃO CRIADA (PARCIALMENTE FUNCIONAL).
 
 # if v01.isnumeric() and v02.isnumeric() and v03.isnumeric():
