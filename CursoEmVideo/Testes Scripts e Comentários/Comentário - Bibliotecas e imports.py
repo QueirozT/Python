@@ -21,3 +21,21 @@
 # random.random() #Retorna um número aleatório entre 0 e 1.
 # random.seed() #Inicializa e ou define a semente para o processo de randomização. ps: não é necessário chamar.
 
+# - BIBLIOTECA MATH: utilizada para realizar operações matemáticas.
+
+# import math
+
+# math.ceil(valor) #Arredonda para cima.
+# math.floor(valor) #Arredonda para baixo.
+# math.fabs(valor) #Retorna o valor absoluto.
+# math.factorial(valor) #Retorna o fatorial de um número.
+# math.fsum(lista) #Retorna a soma de todos os itens de uma lista.
+# math.gcd(valor1, valor2) #Retorna o máximo divisor comum.
+# math.isclose(valor1, valor2, valor3) #Retorna True se os valores são "aproximadamente" iguais.
+# math.isinf(valor) #Retorna True se o valor é infinito.
+# math.isnan(valor) #Retorna True se o valor é NaN (Not a Number).
+# math.log(valor, base) #Retorna o logaritmo de um número.
+# math.modf(valor) #Retorna um tuplo com o valor inteiro e o resto da divisão.
+# math.pow(valor1, valor2) #Retorna o valor de valor1 elevado a valor2.
+# math.sqrt(valor) #Retorna a raiz quadrada de um número.
+# math.trunc(valor) #Arredonda para baixo.
