@@ -16,3 +16,8 @@ if valor.isnumeric():
 else:
     print('"{}" é um valor inválido!'.format(valor))
     print()
+
+# Resultado Alternativo:
+
+# preco = valor * 0.50 if valor <= 200 else valor * 0.45
+# print('A sua passagem custará R${:.2f}'.format(preco))
