@@ -1,9 +1,9 @@
-from random import Random
+from random import randint
 
 print('===== EXERCÍCIO 28 =====')
 print()
 
-number = Random().randint(0, 5) # Variável que recebe um número aleatório entre 0 e 5
+number = randint(0, 5) # Variável que recebe um número aleatório entre 0 e 5
 
 print('Este é um jogo de adivinhação.')
 value = input('Estou pensando em um número entre 0 e 5, qual você acha que é? ')
