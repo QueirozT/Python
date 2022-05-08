@@ -51,3 +51,23 @@
 # time.sleep(valor) #Pausa o programa por "valor" segundos.
 # time.perf_counter() #Retorna o tempo atual em segundos.
 # time.perf_frequency() #Retorna a frequência de atualização do relógio do sistema.
+
+
+# - BIBLIOTECA DATETIME: utilizada para realizar operações de data e hora.
+
+# import datetime
+
+# datetime.now() #Retorna a data e hora atual.
+# datetime.today() #Retorna a data atual.
+# datetime.fromtimestamp(valor) #Retorna a data e hora a partir de um valor de tempo.
+# datetime.utcfromtimestamp(valor) #Retorna a data e hora a partir de um valor de tempo em UTC.
+# datetime.strptime(valor, '%d/%m/%Y') #Retorna a data e hora a partir de uma string.
+# datetime.strftime(valor, '%d/%m/%Y') #Retorna uma string a partir de uma data e hora.
+# datetime.combine(data, hora) #Retorna uma data e hora a partir de uma data e hora.
+# datetime.date(valor) #Retorna a data a partir de uma data e hora.
+# datetime.time(valor) #Retorna a hora a partir de uma data e hora.
+# datetime.weekday(valor) #Retorna o dia da semana a partir de uma data e hora.
+# datetime.isoweekday(valor) #Retorna o dia da semana a partir de uma data e hora.
+# datetime.isocalendar(valor) #Retorna o dia da semana a partir de uma data e hora.
+# datetime.isoformat(valor) #Retorna uma string a partir de uma data e hora.
+# datetime.fromordinal(valor) #Retorna uma data a partir de um número de dia.
