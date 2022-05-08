@@ -8,7 +8,7 @@ number = randint(0, 5) # Variável que recebe um número aleatório entre 0 e 5.
 
 # Primeira interação do programa.
 print('-=-' * 20)
-print('{:^20}'.format('Estou pensando em um número entre 0 e 5. tente adivinhar...'))
+print('{:^60}'.format('Estou pensando em um número entre 0 e 5. tente adivinhar...'))
 print('-=-' * 20)
 print()
 
