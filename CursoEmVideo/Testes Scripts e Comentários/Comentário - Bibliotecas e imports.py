@@ -39,3 +39,15 @@
 # math.pow(valor1, valor2) #Retorna o valor de valor1 elevado a valor2.
 # math.sqrt(valor) #Retorna a raiz quadrada de um número.
 # math.trunc(valor) #Arredonda para baixo.
+
+
+# - BIBLIOTECA TIME: utilizada para realizar operações de tempo.
+
+# import time
+
+# time.time() #Retorna o tempo atual em segundos.
+# time.localtime() #Retorna um tuplo com as informações de tempo.
+# time.strftime('%H:%M:%S') #Retorna uma string com o horário atual.
+# time.sleep(valor) #Pausa o programa por "valor" segundos.
+# time.perf_counter() #Retorna o tempo atual em segundos.
+# time.perf_frequency() #Retorna a frequência de atualização do relógio do sistema.
