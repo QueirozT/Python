@@ -27,7 +27,7 @@ print('Verdadeiro' if True else 'Falso') # EXEMPLO 01
 variavel = 'verdadeiro' if True else 'Falso' # EXEMPLO 02
 
 
-# CONDICIONAL COMPLEXA
+# CONDICIONAL ANINHADA
 
 if True:
     print('Verdadeiro')
