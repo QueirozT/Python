@@ -1,4 +1,4 @@
-from datetime import datetime
+from datetime import datetime # Tive que importar "datetime" porque a própria biblioteca utiliza uma sub-biblioteca com o mesmo nome.
 
 print('===== EXERCÍCIO #39 =====')
 print()
