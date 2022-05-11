@@ -1,4 +1,5 @@
 from datetime import datetime # Tive que importar "datetime" porque a própria biblioteca utiliza uma sub-biblioteca com o mesmo nome.
+# from datetime import date # Opcional, pois a função 'date' só trabalha com datas.
 
 print('===== EXERCÍCIO #39 =====')
 print()
@@ -6,7 +7,9 @@ print()
 ano = int(input('Informe o seu Ano de nascimento: '))
 print()
 
-atual = datetime.now().year
+atual = datetime.now().year 
+# atual = date.today().year # Retorna o ano atual.
+
 idade = atual - ano
 
 if idade < 18:
