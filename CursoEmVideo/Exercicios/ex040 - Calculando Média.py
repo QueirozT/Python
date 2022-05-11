@@ -16,3 +16,5 @@ elif media < 6.9:
 else:
     print('Com {:.1f} e {:.1f} a Sua média é: {:.1f} \nVocê está {}APROVADO!{}'.format(nota01, nota02, media, '\033[32m', '\033[m'))
     print()
+
+# Eu poderia poupar código retirando a média e imprimindo antes das condicionais, mas quero mostrar também o uso do \n
