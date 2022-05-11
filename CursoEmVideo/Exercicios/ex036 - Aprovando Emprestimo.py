@@ -10,8 +10,9 @@ prestacao = valor / (tempo * 12)
 
 if salario * 0.3 > prestacao:
     print('O emprestimo foi aprovado!')
-    print('O valor da prestação será de R${:.2f} por {:.0f} meses ou {:.0f} anos'.format(prestacao, tempo * 12, tempo))
+    print('Para financiar uma casa de R${:.2f} O valor da prestação será de R${:.2f} por {:.0f} meses'.format(prestacao, tempo * 12))
     print()
 else:
+    print('Para financiar uma casa de R${:.2f} em {:.0f} anos, o valor da prestação será de R${:.2f} por mês'.format(valor, tempo, prestacao))
     print('O emprestimo foi negado!')
     print()
