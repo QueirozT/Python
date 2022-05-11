@@ -18,6 +18,7 @@ if idade < 18:
         print('Falta 1 ano para você poder se alistar!')
     else:
         print('Faltam {} anos para você poder se alistar!'.format(18 - idade))
+    print('Seu alistamento será em {}.'.format(atual + (18 - idade)))
     print()
 elif idade == 18:
     print('Você nasceu em {} e tem {} anos.'.format(ano, idade))
@@ -26,4 +27,5 @@ elif idade == 18:
 else:
     print('Você nasceu em {} e tem {} anos.'.format(ano, idade))
     print('Você já deveria ter se alistado há {} anos!'.format(idade - 18))
+    print('Seu alistamento foi em {}.'.format(atual - (idade - 18)))
     print()
