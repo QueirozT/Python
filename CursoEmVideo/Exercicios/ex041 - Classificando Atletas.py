@@ -1,21 +1,30 @@
+from datetime import date
+
 print('===== EXERCÍCIO #41 =====')
 print()
 
-idade = int(input('Qual sua idade? '))
+ano = int(input('Qual seu ano de nascimento? '))
 print()
 
+idade = date.today().year - ano
+
 if idade <= 9:
-    print('Sua classificação é "MIRIM"')
+    print('O atleta tem {} anos.'.format(idade))
+    print('Classificação: MIRIM')
     print()
 elif idade <= 14:
-    print('Sua classificação é "INFANTIL"')
+    print('O atleta tem {} anos.'.format(idade))
+    print('Classificação: INFANTIL')
     print()
 elif idade <= 19:
-    print('Sua classificação é "JUNIOR"')
+    print('O atleta tem {} anos.'.format(idade))
+    print('Classificação: JUNIOR')
     print()
 elif idade <= 20:
-    print('Sua classificação é "SÊNIOR"')
+    print('O atleta tem {} anos.'.format(idade))
+    print('Classificação: SÊNIOR')
     print()
 else:
-    print('Sua classificação é "MASTER"')
+    print('O atleta tem {} anos.'.format(idade))
+    print('Classificação: MASTER')
     print()
