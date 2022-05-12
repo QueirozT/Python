@@ -6,7 +6,7 @@ print()
 
 # Utilizando o print com áspas triplas para formatação literal.
 print('''FORMAS DE PAGAMENTO
-[ 1 ] - À VISTA (DINHEIRO/CHEQUE)
+[ 1 ] - À VISTA (DINHEIRO/PIX)
 [ 2 ] - À VISTA (CARTÃO)
 [ 3 ] - 2X (CARTÃO)
 [ 4 ] - 3X OU MAIS (CARTÃO)
