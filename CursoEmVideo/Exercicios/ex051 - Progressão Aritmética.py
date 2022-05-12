@@ -1,9 +1,9 @@
 print('===== EXERCÍCIO #51 =====')
 print()
 
-print('=-' * 30)
+print('=-=' * 20)
 print('{:^60}'.format('10 TERMOS DE UMA PA - PROGRESSÃO ARITMÉTICA'))
-print('=-' * 30)
+print('=-=' * 20)
 
 termo = int(input('Primeiro Termo? '))
 razao = int(input('Razão? '))
