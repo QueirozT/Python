@@ -26,8 +26,7 @@ if numero:
         peso = float(peso)
 
 if numero:
-    imc = peso / (altura * altura)
-
+    imc = peso / (altura * altura) # imc = Peso / (Altura ** 2) ou imc = Peso / math.sqrt(Altura)
 
 if numero:
     if imc < 18.5:
