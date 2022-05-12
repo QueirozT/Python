@@ -1,4 +1,4 @@
-# Laço de repetição FOR ou "Laço com variavel de controle".
+# LAÇO DE REPETIÇÃO (FOR) OU "LAÇO COM VARIÁVEL DE CONTROLE".
 
 # O for é um laço de repetição que executa uma determinada ação para cada elemento de um iterável.
 
