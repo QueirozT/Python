@@ -4,12 +4,14 @@ print()
 valor = float(input('Insira o valor do produto: R$'))
 print()
 
-print('ESCOLHA A FORMA DE PAGAMENTO:')
-print('[ 1 ] - À VISTA (DINHEIRO/CHEQUE) - 10% de desconto')
-print('[ 2 ] - À VISTA (CARTÃO) - 5% de desconto')
-print('[ 3 ] - 2X (CARTÃO) - valor normal')
-print('[ 4 ] - 3X OU MAIS (CARTÃO) - 20% de juros')
-print()
+# Utilizando o print com áspas triplas para formatação literal.
+print('''FORMAS DE PAGAMENTO
+[ 1 ] - À VISTA (DINHEIRO/CHEQUE)
+[ 2 ] - À VISTA (CARTÃO)
+[ 3 ] - 2X (CARTÃO)
+[ 4 ] - 3X OU MAIS (CARTÃO)
+''')
+
 pagamento = int(input('Qual a forma de pagamento? '))
 print()
 
