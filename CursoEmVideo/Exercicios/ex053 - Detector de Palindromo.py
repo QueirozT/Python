@@ -8,10 +8,10 @@ semEspaco = ''.join(frase.split()) # Remove os espaços em branco entre as palav
 
 aoContrario = semEspaco[::-1] # Inverte a frase.
 
+print('O  inverso de {} é {}.'.format(semEspaco, aoContrario))
+
 if semEspaco == aoContrario: # Verifica se a frase é um palíndromo comparando ela mesma ao contrário.
-    print('"{}"'.format(frase))
-    print('É UM PALÍNDROMO!')
+    print('TEMOS UM PALÍNDROMO!')
 else:
-    print('"{}"'.format(frase))
-    print('NÃO É UM PALÍNDROMO!')
+    print('A frase digitada NÃO É UM PALÍNDROMO!')
 print()
