@@ -27,3 +27,12 @@ print(' O \n {:=^20} \n tem {:.2f} de altura e '.format(nome, altura), end='')
 print('{}'.format(peso))
 
 
+
+# O .format() serve para formatar uma "{}" dentro de um texto, e pode ser usado quantas vezes quiser contanto que esteja logo após o 'texto'.
+# EX:
+
+nome = 'pedro'
+idade = 20
+altura = 1.73
+
+print('{:^60}'.format('O {} tem {} anos e {}m de altura'.format(nome, idade, altura))) # Alinhei o texto ao centro de 60 caracteres.
