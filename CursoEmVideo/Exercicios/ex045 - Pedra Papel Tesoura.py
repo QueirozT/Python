@@ -4,6 +4,7 @@ from time import sleep
 print('===== EXERCÍCIO #45 =====')
 print()
 
+print('{:^40}'.format('JOKENPÔ!!!'))
 print('-=' * 20)
 print('{:^40}'.format('1 - PEDRA | 2 - PAPEL | 3 - TESOURA'))
 print('-=' * 20)
