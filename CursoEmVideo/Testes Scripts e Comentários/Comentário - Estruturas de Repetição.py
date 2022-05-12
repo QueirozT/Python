@@ -17,7 +17,7 @@ for i in range(0, 10, 2):
     print('{:^10}'.format(i))
 print('=' * 10)
 
-# EXEMPLO 03: contar de 10 a 1 só que de trás para frente
-for i in range(10, 0, -1):
+# EXEMPLO 03: contar de 10 a 0 só que de trás para frente
+for i in range(10, -1, -1):
     print('{:^10}'.format(i))
 print('=' * 10)
