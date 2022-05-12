@@ -1,4 +1,4 @@
-print('===== EXERCÍCIO #45 =====')
+print('===== EXERCÍCIO #49 =====')
 print()
 
 print('{:^80}'.format('ESCOLHA UMA DAS OPÇÕES PARA CRIAR A TABUADA!!!'))
