@@ -22,7 +22,8 @@ elif pagamento == 2:
     print('Sua compra de R${:.2f} com o desconto de 5% vai custar R${:.2f}'.format(valor, valor - (valor * 0.05)))
     print()
 elif pagamento == 3:
-    print('Sua compra vai custar R${:.2f}'.format(valor))
+    print('Sua compra será parcelada em 2X de R${:.2f}'.format(valor / 2))
+    print('Sua compra ao final irá custar R${:.2f}'.format(valor))
     print()
 elif pagamento == 4:
     parcelas = int(input('Quantas parcelas? '))
