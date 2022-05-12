@@ -36,3 +36,10 @@ idade = 20
 altura = 1.73
 
 print('{:^60}'.format('O {} tem {} anos e {}m de altura'.format(nome, idade, altura))) # Alinhei o texto ao centro de 60 caracteres.
+
+
+
+# Através das '{}' posso definir o ponto flutuante do numero que será exibido, mas também posso definir o formato de exibição do numero.
+# EX:
+
+print('{:<3.2f}'.format(altura)) # Alinhei o texto a esquerda em um espaço de até 3 digitos e com 2 casas decimais.
