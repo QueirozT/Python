@@ -7,7 +7,7 @@ lista = []
 for i in range(0, 4):
     nome = str(input('Qual é o nome? '))
     idade = int(input('Qual é a idade? '))
-    sexo = str(input('Qual o sexo "M" ou "F"? ')).upper()
+    sexo = str(input('Qual o sexo [M/F]? ')).upper()
     lista += [[nome, idade, sexo]]
     print()
 print()
