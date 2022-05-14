@@ -1,4 +1,4 @@
-# LAÇO DE REPETIÇÃO (FOR) OU "LAÇO COM VARIÁVEL DE CONTROLE".
+# ESTRUTURA DE REPETIÇÃO (FOR) OU "ESTRUTURA DE REPETIÇÃO COM VARIÁVEL DE CONTROLE".
 
 # O for é um laço de repetição que executa uma determinada ação para cada elemento de um iterável.
 
@@ -21,3 +21,9 @@ print('=' * 10)
 for i in range(10, -1, -1):
     print('{:^10}'.format(i))
 print('=' * 10)
+
+
+# ===========================================================================================
+
+# ESTRUTURA DE REPETIÇÃO (WHILE) OU "ESTRUTURA DE REPETIÇÃO COM TESTE LÓGICO"):
+
