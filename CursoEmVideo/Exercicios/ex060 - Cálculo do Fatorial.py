@@ -4,13 +4,13 @@ print()
 valor = int(input('Digite um valor: '))
 print()
 
-c = valor
+c = valor # O contador começa com o valor digitado
 
-fatorial = 1
+fatorial = 1 # Preciso inicializar em 1 pois qualquer valor * 0 é 0, e * 1 é o próprio número.
 
 while c != 0:
-    fatorial = fatorial * c
-    c -= 1
+    fatorial *= c
+    c -= 1 # O contador é decrementado a cada iteração até chegar no valor 0
 
 print('O fatorial de {} é {}'.format(valor, fatorial))
 print()
