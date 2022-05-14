@@ -12,10 +12,10 @@ for i in range(1, 8):
 
     idade = atual - ano
 
-    if idade >= 18:
-        maior += 1
-    elif idade < 18:
+    if idade < 18:
         menor += 1
+    else:
+        maior += 1
 print()
 
 if maior > 0 and menor > 0:
