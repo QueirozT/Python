@@ -28,7 +28,7 @@ for i in range(0, len(lista)):
         homens += [lista[i]]
 
 # Calculando a média de idade dos homens
-maisVelho = max(homens, key=lambda x: x[1])
+maisVelho = max(homens, key=lambda x: x[1]) # Forma mais simples de se obter o maior valor de uma lista
 print('O homem mais velho é {} com {} anos'.format(maisVelho[0], maisVelho[1]))
 print()
 
