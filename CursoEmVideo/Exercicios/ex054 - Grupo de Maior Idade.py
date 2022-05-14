@@ -7,8 +7,8 @@ menor = 0
 
 atual = datetime.now().year
 
-for i in range(0, 7):
-    ano = int(input('Digite o ano de nascimento: '))
+for i in range(1, 8):
+    ano = int(input('Em que ano a {}ª pessoa nasceu? '.format(i)))
 
     idade = atual - ano
 
