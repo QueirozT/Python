@@ -23,5 +23,5 @@ while jogador != cpu:
     if jogador != cpu:
         print('Você errou! Tente novamente!')
         print()
-print('Parabéns! você acertou, mas precisou de {} tentativas!'.format(tentativas))
+print('Parabéns! Você acertou, mas precisou de {} tentativas.'.format(tentativas))
 print()
