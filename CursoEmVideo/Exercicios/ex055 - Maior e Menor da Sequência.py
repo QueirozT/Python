@@ -28,6 +28,6 @@ print()
 #         menor = peso
 # print()
 
-# print('O maior valor registrador foi {}'.format(maior))
-# print('E o menor valor registrador foi {}'.format(menor))
+# print('O maior valor registrador foi {}Kg'.format(maior))
+# print('E o menor valor registrador foi {}Kg'.format(menor))
 # print()
