@@ -43,3 +43,41 @@ if mulheres > 0:
 else:
     print('Não existe mulher com menos de 20 anos na lista.')
 print()
+
+
+# VERSÃO ALTERNATIVA DO PROGRAMA (Mais simples):
+
+# idadeMedia = 0
+
+# nomeVelho = ''
+# idadeVelho = 0
+
+# mulherMenor20 = 0
+
+# for p in range(4):
+#     print('{:-^20}'.format(' {}ª PESSOA '.format(p+1)))
+#     nome = str(input('Nome: ')).strip()
+#     idade = int(input('Idade: '))
+#     sexo = str(input('Sexo [M/F]: ')).strip()
+#     print()
+    
+#     idadeMedia += idade
+
+#     if p == 0 and sexo in 'Mm':
+#         nomeVelho = nome
+#         idadeVelho = idade
+#     elif idade > idadeVelho and sexo in 'Mm':
+#         nomeVelho = nome
+#         idadeVelho = idade
+
+#     if sexo in 'Ff' and idade < 20:
+#         mulherMenor20 += 1
+
+# print('A idade média do grupo é {}.'.format(idadeMedia / 4))
+# print()
+
+# print('O homem mais velho é {} com {} anos.'.format(nomeVelho, idadeVelho))
+# print()
+
+# print('Ao todo são {} mulheres com menos de 20 anos.'.format(mulherMenor20))
+# print()
