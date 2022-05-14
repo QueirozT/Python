@@ -5,9 +5,10 @@ lista = []
 
 # Registrando a lista com nome idade e sexo.
 for i in range(0, 4):
-    nome = str(input('Qual é o nome? '))
-    idade = int(input('Qual é a idade? '))
-    sexo = str(input('Qual o sexo [M/F]? ')).upper()
+    print('{:-^20}'.format(' {} PESSOA '.format(i+1)))
+    nome = str(input('Nome? '))
+    idade = int(input('Idade? '))
+    sexo = str(input('Sexo [M/F]? ')).upper()
     lista += [[nome, idade, sexo]]
     print()
 print()
