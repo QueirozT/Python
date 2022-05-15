@@ -12,7 +12,8 @@ valor = 0
 
 while valor != 999:
     valor = int(input('Qual o valor? '))
-    soma += valor
+    if valor != 999:
+        soma += valor
     print()
 print('Finalizando...')
 print()
