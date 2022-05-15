@@ -6,6 +6,7 @@ print('{:^40}'.format('PROGRESSÃO ARITMÉTICA'))
 print('=-' * 20)
 print()
 
+# Primeira parte do programa, desenvolvido no exercício anterior.
 valor = int(input('Qual o número? '))
 r = int(input('Qual a razão? '))
 print()
