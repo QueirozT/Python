@@ -1,3 +1,5 @@
+from time import sleep
+
 print('===== EXERCÍCIO #59 =====')
 print()
 
@@ -17,17 +19,34 @@ while opcao != 5:
     print('{}'.format('[ 4 ] NOVOS NÚMEROS'))
     print('{}'.format('[ 5 ] SAIR DO PROGRAMA'))
     print()
-    opcao = int(input('Escolha uma opção! '))
+
+    opcao = int(input('>>>> Escolha uma opção! '))
     print()
+    print('Processando...')
+    print()
+    sleep(1.5)
+    
     if opcao == 1:
-        print('A soma entre {} e {} é {}'.format(v01, v02, v01 + v02))
+        print('=-=' * 15)
+        print('{:^45}'.format('A soma entre {} e {} é {}'.format(v01, v02, v01 + v02)))
+        print('=-=' * 15)
+        sleep(4)
     elif opcao == 2:
-        print('A multiplicação entre {} e {} é {}'.format(v01, v02, v01 * v02))
+        print('=-=' * 15)
+        print('{:^45}'.format('A multiplicação entre {} e {} é {}'.format(v01, v02, v01 * v02)))
+        print('=-=' * 15)
+        sleep(4)
     elif opcao == 3:
         if v01 > v02:
-            print('{} é maior que {}'.format(v01, v02))
+            print('=-=' * 15)
+            print('{:^45}'.format('{} é maior que {}'.format(v01, v02)))
+            print('=-=' * 15)
+            sleep(4)
         else:
-            print('{} é maior que {}'.format(v02, v01))
+            print('=-=' * 15)
+            print('{:^45}'.format('{} é maior que {}'.format(v02, v01)))
+            print('=-=' * 15)
+            sleep(4)
     elif opcao == 4:
         v01 = float(input('Digite o primeiro valor: '))
         v02 = float(input('Digite o segundo valor: '))
