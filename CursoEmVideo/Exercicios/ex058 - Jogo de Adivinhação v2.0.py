@@ -22,11 +22,20 @@ while jogador != cpu:
     if jogador > 10 or jogador < 0:
         print('"{}" não vale! tente de novo.'.format(jogador))
         print()
-    elif jogador < cpu:
-        print('Você errou! é um pouco mais...')
+    elif jogador - cpu == 1 or jogador - cpu == -1:
+        print('Está Pelando...')
         print()
-    elif jogador > cpu:
-        print('Você errou! é um pouco menos...')
+    elif jogador - cpu == 2 or jogador - cpu == -2:
+        print('Está Quente...')
+        print()
+    elif jogador - cpu == 3 or jogador - cpu == -3:
+        print('Está Morno...')
+        print()
+    elif jogador - cpu == 4 or jogador - cpu == -4:
+        print('Está Frio...')
+        print()
+    else:
+        print('Está Muito Frio...')
         print()
     jogador = int(input('Qual é o seu palpite? '))
     tentativas += 1
