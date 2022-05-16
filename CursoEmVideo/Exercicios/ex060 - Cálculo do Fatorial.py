@@ -14,3 +14,15 @@ while c != 0:
 
 print('O fatorial de {} é {}'.format(valor, fatorial))
 print()
+
+
+# PROGRAMA ALTERNATIVO:
+
+# from math import factorial
+# print()
+
+# n = int(input('Digite um número: '))
+# f = factorial(n)
+
+# print('O fatorial de {} é {}'.format(n, f))
+# print()
