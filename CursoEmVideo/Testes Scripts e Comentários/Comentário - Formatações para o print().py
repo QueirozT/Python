@@ -43,3 +43,11 @@ print('{:^60}'.format('O {} tem {} anos e {}m de altura'.format(nome, idade, alt
 # EX:
 
 print('{:<3.2f}'.format(altura)) # Alinhei o texto a esquerda em um espaço de até 3 digitos e com 2 casas decimais.
+
+
+
+# Pode utilizar condicionais dentro do format()
+# EX:
+
+n = 3
+print(' + ' if n != 0 else ' = ')
