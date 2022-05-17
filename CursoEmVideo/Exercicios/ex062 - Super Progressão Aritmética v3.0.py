@@ -55,3 +55,33 @@ if mais == 'N':
     print('{:^60}'.format('A progressão foi finalizada após exibir {} termos.'.format(quantidade)))
     print('=-=' * 20)
 print()
+
+
+# PROGRAMA ALTERNATIVO (SIMPLIFICADO):
+
+# print('-=' * 10)
+# print('{:^20}'.format('GERADOR DE PA'))
+# print('-=' * 10)
+
+# razao = int(input('Informe a razão: '))
+# primeiro = int(input('Informe o primeiro termo: '))
+# print()
+
+# termo = primeiro
+# cont = 1
+# total = 0
+# mais = 10
+
+# while mais != 0:
+#     total += mais
+#     while cont <= total:
+#         print('{} -> '.format(termo), end='')
+#         termo += razao
+#         cont += 1
+#     print('PAUSA!')
+#     print()
+#     mais = int(input('Quantos termos você quer mostrar a mais? '))
+#     print()
+
+# print('Progressão finalizada com {} termos mostrados.'.format(total))
+# print()
