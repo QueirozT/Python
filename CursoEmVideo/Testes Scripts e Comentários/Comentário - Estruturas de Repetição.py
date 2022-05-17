@@ -34,14 +34,40 @@ print('=' * 10)
 # 2 - O bloco de código a ser executado.
 
 # EXEMPLO 01: Anotar um número enquanto o valor for maior que 0
+print('EXEMPLO 01: Anotar um número enquanto o valor for maior que 0')
 valor = 1
 while valor != 0:
     valor = int(input('Digite um número: '))
 print('Fim')
 
 # EXEMPLO 02: Anotar um valor e perguntar se quer continuar ou não
+print('EXEMPLO 02: Anotar um valor e perguntar se quer continuar ou não')
 resp = 'S'
 while resp == 'S':
     valor = int(input('Digite um número: '))
     resp = input('Quer continuar? [S/N] ').upper().strip()
+print('Fim')
+
+
+
+# ESTRUTURA DE REPETIÇÃO (INFINITA) OU "ESTRUTURA DE REPETIÇÃO DO-WHILE":
+
+# O Do-While não existe no Python, mas pode ser replicado utilizando uma estrutura infinita "while" com uma condicional 'break'
+
+# EXEMPLO 03: Anotar um número enquanto o valor for maior que 0
+print('EXEMPLO 03: Anotar um número enquanto o valor for maior que 0 (Do-While)')
+while True:
+    valor = int(input('Digite um número: '))
+    if valor == 0:
+        break
+print('Fim')
+
+
+# EXEMPLO 04: Anotar um valor e perguntar se quer continuar ou não
+print('EXEMPLO 04: Anotar um valor e perguntar se quer continuar ou não (Do-While)')
+while True:
+    valor = int(input('Digite um número: '))
+    resp = input('Quer continuar? [S/N] ').upper().strip()
+    if resp == 'N':
+        break
 print('Fim')
