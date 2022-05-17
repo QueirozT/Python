@@ -11,7 +11,7 @@ valor = int(input('Qual o número? '))
 r = int(input('Qual a razão? '))
 print()
 
-c = 10
+c = quantidade = 10
 
 while c != 0:
     print('{}'.format(valor), end=" -> ")
@@ -28,6 +28,8 @@ while mais == 'S':
     c = int(input('Quantos termos você quer mostrar a mais? '))
     print()
 
+    quantidade += c # Número de termos que o usuário quer mostrar.
+
     while c != 0:
         print('{}'.format(valor), end=" -> ")
         valor += r
@@ -37,3 +39,9 @@ while mais == 'S':
 
     mais = input('Quer mostrar mais termos? [S/N]: ').upper().strip()
     print()
+
+if mais == 'N':
+    print('=-=' * 20)
+    print('{:^60}'.format('A progressão foi finalizada após {} termos.'.format(quantidade)))
+    print('=-=' * 20)
+print()
