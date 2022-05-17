@@ -51,3 +51,27 @@ print('{:<3.2f}'.format(altura)) # Alinhei o texto a esquerda em um espaço de a
 
 n = 3
 print(' + ' if n != 0 else ' = ')
+
+
+
+# UTILIZANDO A INTERPOLAÇÃO DAS F-STRINGS:
+
+# Adicionada a partir da versão 3.6 do Python, a f-string é uma forma de escrever strings com variáveis dentro de uma string.
+# Para utilizar é preciso adicionar um 'F' antes da string, e entre as chaves "{}" adiciona as variáveis que serão utilizadas.
+# EX:
+
+nome = 'pedro'
+idade = 20
+salario = 1000.00
+print(f'O {nome} tem {idade} anos e recebe R${salario}.')
+
+# Também é possível utilizar a f-string para formatar um numero com ponto flutuante ou adicionar outras formatações.
+# EX:
+
+nome = 'pedro'
+idade = 22
+salario = 1350.3
+print(f'O {nome} tem {idade} anos e recebe R${salario:.2f}.') # Formatação de 2 casas decimais.
+
+print(f'{nome:=^20}') # Alinha o texto ao centro com o total de 20 caracteres.
+print('{:^40}'.format(f'O {nome} tem {idade} anos.')) # Utilizando formatação com interpolação de strings.
