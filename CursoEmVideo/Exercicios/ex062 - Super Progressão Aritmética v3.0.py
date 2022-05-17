@@ -24,6 +24,11 @@ print()
 mais = input('Quer mostrar mais termos? [S/N]: ').upper().strip()
 print()
 
+while mais not in 'SN': # Validação para garantir que o usuário digite apenas S ou N.
+    print('Opção inválida!')
+    mais = input('Quer mostrar mais termos? [S/N]: ').upper().strip()
+    print()
+
 while mais == 'S':
     c = int(input('Quantos termos você quer mostrar a mais? '))
     print()
@@ -40,8 +45,18 @@ while mais == 'S':
     mais = input('Quer mostrar mais termos? [S/N]: ').upper().strip()
     print()
 
+    while mais not in 'SN':
+        print('Opção inválida!')
+        mais = input('Quer mostrar mais termos? [S/N]: ').upper().strip()
+        print()
+
+print('=-' * 20)
+print('{:^40}'.format('PROGRESSÃO ARITMÉTICA'))
+print('=-' * 20)
+print()
+
 if mais == 'N':
     print('=-=' * 20)
-    print('{:^60}'.format('A progressão foi finalizada após {} termos.'.format(quantidade)))
+    print('{:^60}'.format('A progressão foi finalizada após exibir {} termos.'.format(quantidade)))
     print('=-=' * 20)
 print()
