@@ -4,7 +4,7 @@ print()
 quantidade = int(input('Quantos elementos você quer mostrar? '))
 print()
 
-resultado = 1
+resultado = 0
 anterior = 1
 
 while quantidade != 0:
