@@ -50,11 +50,6 @@ while mais == 'S':
         mais = input('Quer mostrar mais termos? [S/N]: ').upper().strip()
         print()
 
-print('=-' * 20)
-print('{:^40}'.format('PROGRESSÃO ARITMÉTICA'))
-print('=-' * 20)
-print()
-
 if mais == 'N':
     print('=-=' * 20)
     print('{:^60}'.format('A progressão foi finalizada após exibir {} termos.'.format(quantidade)))
