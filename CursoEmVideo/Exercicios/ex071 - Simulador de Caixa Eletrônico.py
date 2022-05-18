@@ -38,3 +38,46 @@ if S1 > 0:
     print('{:^40}'.format(f'{S1} cédulas de R$1.00'))
 print('~~' * 20)
 print()
+
+
+# PROGRAMA ALTERNATIVO:
+
+# print('=' * 30)
+# print('{:^30}'.format('BANCO CEV'))
+# print('=' * 30)
+# print()
+
+# valor = int(input('Quanto deseja sacar? R$'))
+# print()
+
+# total = valor # Guarda o valor sacado
+# ced = 50 # Guarda o valor da cédula atual (mais alta)
+# totced = 0 # Guarda quantas vezes a cédula mais alta é usada
+
+# while True:
+#     if total >= ced: # Verifica se o valor sacado pode ser subtraído da cédula atual
+#         total -= ced
+#         totced += 1
+#     else: # Se não, a cédula atual é descartada e a próxima é usada
+
+#         if totced > 0: # Verifica se a cédula atual foi usada
+#             print(f'Total de {totced} cédulas de R${ced}') # Imprime quantas vezes a cédula atual foi usada.
+
+#         # Verifica qual a próxima cédula a ser usada para o valor restante
+#         if ced == 50:
+#             ced = 20
+#         elif ced == 20:
+#             ced = 10
+#         elif ced == 10:
+#             ced = 1
+
+#         # Limpa o contador de cédulas para a próxima cédula
+#         totced = 0
+        
+#         # Verifica se o valor restante é zero para sair do laço
+#         if total == 0:
+#             break
+
+# print('=' * 30)
+# print('{:^30}'.format('Volte sempre ao BANCO CEV!'))
+# print()
