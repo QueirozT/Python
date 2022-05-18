@@ -6,9 +6,18 @@ print('{:^40}'.format('BANCO GRATIS'))
 print('==' * 20)
 print()
 
-# Coleta o valor do saque
-valor = int(input('Quanto deseja sacar? R$'))
-print()
+# Verifica se o valor digitado é um número maior que 0
+while True:
+    valor = input('Quanto deseja sacar? R$')
+    print()
+    if valor.isnumeric():
+        valor = int(valor)
+        if valor > 0:
+            break
+    else:
+        print(f'"{valor}" é um valor inválido.')
+        print('Insira um número inteiro!')
+        print()
 
 # Inicia a contagem de notas de cada valor
 S50 = S20 = S10 = S1 = 0
