@@ -52,10 +52,10 @@ while True:
         break
 
 # Mostrar o placar final
-if c == 1:
+if c == 0:
+    print(f'Você perdeu na primeira tentativa!')
+elif c == 1:
     print(f'Você venceu {c} vez.')
-elif c == 0:
-    print(f'Você perdeu de primeira!')
 else:
     print(f'Você venceu {c} vezes.')
 print()
