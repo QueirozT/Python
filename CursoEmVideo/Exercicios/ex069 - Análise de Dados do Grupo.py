@@ -1,6 +1,7 @@
 print('===== EXERCÍCIO #69 =====')
 print()
 
+# Iniciando as variáveis (Maior de Idade), (Quantidade de Homens) e (Quantidade de Mulheres)
 maior = homem = mulher = 0
 
 while True:
@@ -8,14 +9,17 @@ while True:
     print('CADASTRE UMA PESSOA!')
     print('~~' * 10)
 
+# Coletando a idade da pessoa
     idade = int(input('Idade? '))
 
+# Verificando o sexo da pessoa
     while True:
         nome = str(input('Sexo? [M/F] ')).strip().upper()[0]
         if nome in 'MF':
             break
     print()
 
+# Verificando se é maior de idade e se é homem ou mulher
     if idade >= 18:
         maior += 1
     if nome == 'M':
@@ -23,6 +27,7 @@ while True:
     if nome == 'F' and idade < 20:
         mulher += 1
 
+# Verificando se o usuário quer continuar ou não
     while True:
         opcao = str(input('Deseja continuar? [S/N] ')).strip().upper()[0]
         print()
@@ -34,6 +39,7 @@ while True:
     if opcao == 'N':
         break
 
+# Mostrando os resultados
 print('~~' * 30)
 if maior == 0:
     print('{:^60}'.format('Não há pessoas com mais de 18 anos!'))
