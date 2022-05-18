@@ -6,11 +6,14 @@ print('{:^40}'.format('BANCO GRATIS'))
 print('==' * 20)
 print()
 
+# Coleta o valor do saque
 valor = int(input('Quanto deseja sacar? R$'))
 print()
 
+# Inicia a contagem de notas de cada valor
 S50 = S20 = S10 = S1 = 0
 
+# Verifica se o valor é maior que a nota e subtrai o valor pela nota até que o valor seja 0
 while True:
     if valor >= 50:
         valor -= 50
@@ -27,6 +30,7 @@ while True:
     else:
         break
 
+# Imprime a quantidade de cada nota
 print('{:~^40}'.format(' SACANDO '))
 if S50 > 0:
     print('{:^40}'.format(f'{S50} cédulas de R$50.00'))
