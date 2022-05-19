@@ -23,3 +23,31 @@ print()
 
 print('Em que posição está o time do Flamengo? ', tupla.index('Flamengo') + 1)
 print()
+
+
+# FORMA ALTERNATIVA DE FAZER O EXERCÍCIO:
+
+# print('-=-' * 40)
+# print('{:^120}'.format('Os 5 primeiros colocados são:'))
+# print('{:^120}'.format(f'{tupla[0:5]}'))
+# print('-=-' * 40)
+# print()
+
+# print('-=-' * 40)
+# print('{:^120}'.format('Os últimos 4 colocados são:'))
+# print('{:^120}'.format(f'{tupla[16:]}')) # Poderia usar 'tupla[-4:]' também.
+# print('-=-' * 40)
+# print()
+
+# print('-=-' * 40)
+# print('{:^120}'.format('Em ordem alfabética:'))
+# print('{:^120}'.format(f'{sorted(tupla[:7])}'))
+# print('{:^120}'.format(f'{sorted(tupla[6:13])}'))
+# print('{:^120}'.format(f'{sorted(tupla[12:])}'))
+# print('-=-' * 40)
+# print()
+
+# print('-=-' * 40)
+# print('{:^120}'.format(f'O time do Flamengo está na posição: {tupla.index("Flamengo") + 1}'))
+# print('-=-' * 40)
+# print()
