@@ -33,7 +33,7 @@ print()
 
 # O for também pode ser utilizado para ler estruturas compostas como tuplas, listas e dicionários.
 
-# EXEMPLO 04: Mostrar todos os valores de uma tupla e os indices
+# EXEMPLO 04: Mostrar todos os valores de uma tupla e depois mostrar os indices.
 tupla = ('Valor 01', 'Valor 02', 'Valor 03')
 print('EXEMPLO 04: Mostrar todos os valores de uma tupla')
 for i in tupla: # Desta forma O i recebe o valor de cada elemento da tupla.
@@ -45,6 +45,15 @@ print('EXEMPLO 04: Mostrar todos os indices de uma tupla')
 for i in range(len(tupla)): # Desta forma O i recebe o índice de cada elemento da tupla.
     print('{:^10}'.format(f'{i}'))
 print('=' * 10)
+print()
+
+
+# EXEMPLO 05: Mostrar todos os valores de uma lista e os indices
+lista = ['Valor 01', 'Valor 02', 'Valor 03']
+print('EXEMPLO 05: Mostrar todos os valores de uma lista e os indices')
+for p, i in enumerate(lista): # Desta forma a posição 'p' recebe o índice e o item 'i' recebe o valor de cada elemento da lista.
+    print('{:^10}'.format(f'"{i}" na posição "{p}"'))
+print('=' * 22)
 print()
 
 
