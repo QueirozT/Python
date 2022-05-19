@@ -48,6 +48,6 @@ print()
 # print()
 
 # print('-=-' * 40)
-# print('{:^120}'.format(f'O time do Flamengo está na posição: {tupla.index("Flamengo") + 1}'))
+# print('{:^120}'.format(f'O time do Flamengo está na {tupla.index("Flamengo") + 1}º posição.'))
 # print('-=-' * 40)
 # print()
