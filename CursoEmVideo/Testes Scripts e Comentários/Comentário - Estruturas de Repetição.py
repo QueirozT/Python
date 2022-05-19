@@ -12,26 +12,40 @@ print('EXEMPLO 01: Contar de 0 a 9.')
 for i in range(10):
     print('{:^10}'.format(i))
 print('=' * 10)
+print()
+
 
 # EXEMPLO 02: Contar de 0 a '8' de 2 em 2 (ele não conta o ultimo digito, por isso de 0 a "8" e não "10")
 print('EXEMPLO 02: Contar de 0 a 8 de 2 em 2.')
 for i in range(0, 10, 2):
     print('{:^10}'.format(i))
 print('=' * 10)
+print()
+
 
 # EXEMPLO 03: Contar de 10 a 0 só que de trás para frente
 print('EXEMPLO 03: Contar de 10 a 0.')
 for i in range(10, -1, -1):
     print('{:^10}'.format(i))
 print('=' * 10)
+print()
 
 
 # O for também pode ser utilizado para ler estruturas compostas como tuplas, listas e dicionários.
-# EXEMPLO 04: Mostrar todos os valores de uma tupla
-tupla = (1, 2, 3, 4, 5, 6, 7, 8, 9, 10)
+
+# EXEMPLO 04: Mostrar todos os valores de uma tupla e os indices
+tupla = ('Valor 01', 'Valor 02', 'Valor 03')
 print('EXEMPLO 04: Mostrar todos os valores de uma tupla')
-for i in tupla:
+for i in tupla: # Desta forma O i recebe o valor de cada elemento da tupla.
     print('{:^10}'.format(f'{i}'))
+print('=' * 10)
+print()
+
+print('EXEMPLO 04: Mostrar todos os indices de uma tupla')
+for i in range(len(tupla)): # Desta forma O i recebe o índice de cada elemento da tupla.
+    print('{:^10}'.format(f'{i}'))
+print('=' * 10)
+print()
 
 
 
@@ -46,19 +60,22 @@ for i in tupla:
 # 2 - O bloco de código a ser executado.
 
 # EXEMPLO 01: Anotar um número enquanto o valor for maior que 0
-print('EXEMPLO 01: Anotar um número enquanto o valor for maior que 0')
+print('EXEMPLO 01: Anotar um número enquanto o valor for maior que 0 (WHILE)')
 valor = 1
 while valor != 0:
     valor = int(input('Digite um número: '))
 print('Fim')
+print()
+
 
 # EXEMPLO 02: Anotar um valor e perguntar se quer continuar ou não
-print('EXEMPLO 02: Anotar um valor e perguntar se quer continuar ou não')
+print('EXEMPLO 02: Anotar um valor e perguntar se quer continuar ou não (WHILE)')
 resp = 'S'
 while resp == 'S':
     valor = int(input('Digite um número: '))
     resp = input('Quer continuar? [S/N] ').upper().strip()
 print('Fim')
+print()
 
 
 
@@ -73,6 +90,7 @@ while True:
     if valor == 0:
         break
 print('Fim')
+print()
 
 
 # EXEMPLO 04: Anotar um valor e perguntar se quer continuar ou não
@@ -83,3 +101,4 @@ while True:
     if resp == 'N':
         break
 print('Fim')
+print()
