@@ -10,7 +10,11 @@ tupla = (1, 2, 3, 'Valor 01', 'Valor 02', 'Valor 03')
 print(tupla)
 print()
 
+
 # AS TUPLAS TAMBÉM POSSUEM MÉTODOS, COMO:
 # .count(valor) - Retorna a quantidade de ocorrências de um valor dentro da tupla.
 # .index(valor) - Retorna o índice da primeira ocorrência de um valor. Pode procurar a partir de um índice específico. EX: .index('t', 2).
 # del(tupla) - Remove a tupla.
+
+# Apesar de não permitir alterações, as tuplas podem ser somadas em uma nova variável ou convertidas em listas.
+
