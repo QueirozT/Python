@@ -5,12 +5,13 @@ lista = ('zero', 'Um', 'Dois', 'Três', 'Quatro', 'Cinco', 'Seis', 'Sete', 'Oito
 
 while True:
     valor = input('Digite um valor entre 0 e 20: ')
+    print()
+
     if valor.isnumeric() and int(valor) >= 0 and int(valor) <= 20:
         valor = int(valor)
         break
-    else:
-        print('Valor inválido!')
-    print()
+    
+    print('Valor inválido!', end=' ')
 
 print(f'Você digitou o número "{lista[valor]}"')
 print()
