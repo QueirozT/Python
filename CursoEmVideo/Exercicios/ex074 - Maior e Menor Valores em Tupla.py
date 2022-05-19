@@ -6,8 +6,8 @@ print()
 tupla = ()
 
 for i in range(4):
-    valor = (randint(0, 10),)
-    tupla += valor
+    valor = (randint(0, 10),) # O '(,)' é necessário para que o valor seja uma tupla.
+    tupla += valor # Somente uma tupla pode ser concatenada com outra tupla.
 
 print(f'Os valores sorteados foram: {tupla[0:]}')
 print()
