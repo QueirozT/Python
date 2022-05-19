@@ -8,19 +8,31 @@
 # 3 - A ação a ser executada (opcional).
 
 # EXEMPLO 01: Contar de 0 a 9 (O valor padrão da variável de controle é "0", e não informei a ação. Posso colocar só o teste de condição.)
+print('EXEMPLO 01: Contar de 0 a 9.')
 for i in range(10):
     print('{:^10}'.format(i))
 print('=' * 10)
 
 # EXEMPLO 02: Contar de 0 a '8' de 2 em 2 (ele não conta o ultimo digito, por isso de 0 a "8" e não "10")
+print('EXEMPLO 02: Contar de 0 a 8 de 2 em 2.')
 for i in range(0, 10, 2):
     print('{:^10}'.format(i))
 print('=' * 10)
 
 # EXEMPLO 03: Contar de 10 a 0 só que de trás para frente
+print('EXEMPLO 03: Contar de 10 a 0.')
 for i in range(10, -1, -1):
     print('{:^10}'.format(i))
 print('=' * 10)
+
+
+# O for também pode ser utilizado para ler estruturas compostas como tuplas, listas e dicionários.
+# EXEMPLO 04: Mostrar todos os valores de uma tupla
+tupla = (1, 2, 3, 4, 5, 6, 7, 8, 9, 10)
+print('EXEMPLO 04: Mostrar todos os valores de uma tupla')
+for i in tupla:
+    print('{:^10}'.format(f'{i}'))
+
 
 
 # ===========================================================================================
