@@ -61,6 +61,14 @@ frase.lstrip() # Remove os espaços em branco no início da string.
 
 
 
+# REORGANIZANDO STRING
+#=====================#
+print(sorted(frase)) # Ordena a string. também pode ser usado sorted(frase, reverse=True) para ordenar a string de forma reversa.
+
+# frase = sorted(frase) # Ordena a string e atribui a variável.
+
+
+
 # DIVISÃO DE STRING
 #==================#
 
