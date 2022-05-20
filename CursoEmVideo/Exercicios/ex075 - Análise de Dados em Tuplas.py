@@ -17,7 +17,7 @@ else:
 print()
 
 if tupla.count(3) > 0:
-    print(f'O valor 3 foi encontrado na posição {tupla.index(3)}.')
+    print(f'O valor 3 foi encontrado na {tupla.index(3)+1}º posição.')
 else:
     print('O valor 3 não foi digitado.')
 print()
