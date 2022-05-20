@@ -74,4 +74,4 @@ salario = 1350.3
 print(f'O {nome} tem {idade} anos e recebe R${salario:.2f}.') # Formatação de 2 casas decimais.
 
 print(f'{nome:=^20}') # Alinha o texto ao centro com o total de 20 caracteres.
-print('{:^40}'.format(f'O {nome} tem {idade} anos.')) # Utilizando formatação com interpolação de strings.
+print(f'{f"O {nome} tem {idade} anos.":^40}') # Utilizando formatação com interpolação de strings.
