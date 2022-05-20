@@ -7,6 +7,9 @@ for i in range(4):
     tupla += (int(input('Digite um Número: ')),)
 print()
 
+print(f'Você digitou os valores: {tupla}')
+print()
+
 if tupla.count(9) > 0:
     print(f'O valor 9 aparece {tupla.count(9)} vez(es).')
 else:
