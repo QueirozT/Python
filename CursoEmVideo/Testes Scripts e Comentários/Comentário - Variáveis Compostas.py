@@ -16,8 +16,9 @@ print()
 # .index(valor) - Retorna o índice da primeira ocorrência de um valor. Pode procurar a partir de um índice específico. EX: .index('t', 2).
 # del(tupla) - Remove a tupla.
 
-# Apesar de não permitir alterações, as tuplas podem ser somadas em uma nova variável ou convertidas em listas.
+# Apesar de não permitir alterações, as tuplas podem ser concatenadas com outras tuplas ou convertidas em listas.
 
+# ======================================================================================================================
 
 
 # LISTAS - As listas são variáveis compostas que armazenam mais de um valor dentro de [] (Colchetes). Estas podem ser alteradas.
@@ -52,3 +53,5 @@ print()
 # .pop(indice) - Remove o valor que está em um índice específico. Se não especificado, o último valor da lista será removido.
 # del lista[indice] - Remove um valor específico a lista.
 # .clear() - Limpa a lista.
+
+# ======================================================================================================================
