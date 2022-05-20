@@ -38,17 +38,21 @@ print()
 
 
 # AS LISTAS TAMBÉM POSSUEM MÉTODOS, COMO:
-# .append(valor) - Adiciona um valor no final da lista.
-# .insert(indice, valor) - Insere um valor em um índice específico sem substituir valores existentes.
-
 # len(lista) - Retorna o tamanho da lista.
+# max(lista) - Retorna o maior valor da lista.
+# min(lista) - Retorna o menor valor da lista.
+
 # .index(valor) - Retorna o índice da primeira ocorrência de um valor. Pode procurar a partir de um índice específico. EX: .index('t', 2).
 # .count(valor) - Retorna a quantidade de ocorrências de um valor dentro da lista.
+
+# .append(valor) - Adiciona um valor no final da lista.
+# .insert(indice, valor) - Insere um valor em um índice específico sem substituir valores existentes.
 
 # .sort() - Ordena a lista. Pode inverter a ordem dos elementos com o parâmetro .sort(reverse=True).
 # .reverse() - Inverte a ordem dos elementos da lista.
 
 # .copy() - Cria uma cópia da lista. Também pode criar usando "variavel = lista[:]" para que a lista original não seja alterada.
+
 # .remove(valor) - Remove o primeiro "valor" que encontrar.
 # .pop(indice) - Remove o valor que está em um índice específico. Se não especificado, o último valor da lista será removido.
 # del lista[indice] - Remove um valor específico a lista.
