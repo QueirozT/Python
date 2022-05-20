@@ -10,5 +10,4 @@ for v in tupla: # Desta forma o item 'v' recebe o valor de cada elemento da tupl
         if c in 'AEIOU':
             print(c, end=' ')
     print()
-    
-print('\n')
+print()
