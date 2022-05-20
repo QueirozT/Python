@@ -48,7 +48,7 @@ print()
 # .sort() - Ordena a lista. Pode inverter a ordem dos elementos com o parâmetro .sort(reverse=True).
 # .reverse() - Inverte a ordem dos elementos da lista.
 
-# .copy() - Cria uma cópia da lista.
+# .copy() - Cria uma cópia da lista. Também pode criar usando "variavel = lista[:]" para que a lista original não seja alterada.
 # .remove(valor) - Remove o primeiro "valor" que encontrar.
 # .pop(indice) - Remove o valor que está em um índice específico. Se não especificado, o último valor da lista será removido.
 # del lista[indice] - Remove um valor específico a lista.
