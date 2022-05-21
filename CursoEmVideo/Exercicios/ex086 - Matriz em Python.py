@@ -34,7 +34,7 @@ for l in lista:
 # matriz = [[0, 0, 0], [0, 0, 0], [0, 0, 0]] # Cria uma matriz 3x3 vazia.
 
 # for l in range(3): # percorre a linha da matriz.
-#     for c in range(3): # percorre a coluna da matriz.
+#     for c in range(3): # percorre as colunas da linha[l] da matriz.
 #         matriz[l][c] = int(input(f'Digite um valor para: [ {l} ] [ {c} ]: ')) # Adiciona o valor digitado a linha[l] na coluna[c].
 # print()
 
