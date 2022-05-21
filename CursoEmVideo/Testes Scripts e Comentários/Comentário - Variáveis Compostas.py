@@ -102,6 +102,3 @@ print(lista_composta[0][0])
 print(lista_composta[1][0])
 print(lista_composta[2][0])
 print()
-
-
-#
