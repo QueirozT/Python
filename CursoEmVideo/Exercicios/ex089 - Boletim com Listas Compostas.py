@@ -42,7 +42,7 @@ while True:
         break
     
     aluno = str(input('Qual o Nome ou o N° do aluno? ')).upper().strip() # Coletando o nome ou o número do aluno.
-    if aluno.isnumeric(): # verificando se um número foi digitado.
+    if aluno.isnumeric() and int(aluno) <= len(lista): # verificando se um número foi digitado e se é menor que o tamanho da lista.
         aluno = int(aluno) - 1
         print(f'\nAs notas de {lista[aluno][0]} são {lista[aluno][1]} e {lista[aluno][2]} a média é {lista[aluno][3]:.1f}')
     else:
