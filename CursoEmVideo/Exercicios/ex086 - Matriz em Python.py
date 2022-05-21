@@ -1,17 +1,17 @@
 print('===== EXERCÍCIO #086 =====')
 print()
 
-lista = [[], [], []] # Cria uma lista de 3 listas vazias.
+lista = [[], [], []] # Cria uma lista composta com 3 listas vazias.
 
-for i in range(3): # Percorre a Lista Composta.
-    for j in range(3): # Percorre a Lista dentro da Lista Composta.
-        lista[i].append(int(input(f'Digite um valor para: [ {i} ] [ {j} ]: '))) # Adiciona um valor a cada vez que o laço for executado.
-        print()
+for l in range(3): # Percorre a Lista Composta.
+    for c in range(3): # Percorre a Lista dentro da Lista Composta.
+        lista[l].append(int(input(f'Digite um valor para: [ {l} ] [ {c} ]: '))) # Adiciona um valor a cada vez que o laço for executado.
+print()
 
 # Percorre as Listas dentro da Lista Composta.
-for i in lista:
-    for j in i:
-        print(f'[ {j} ] ', end='') # Imprime o valor de cada Lista dentro da Lista Composta.
+for l in lista:
+    for c in l:
+        print(f'[ {c} ] ', end='') # Imprime o valor de cada Lista dentro da Lista Composta.
     print('\n')
 
 
@@ -28,3 +28,17 @@ for i in lista:
 # print()
 
 
+
+# PROGRAMA ALTERNATIVO:
+
+# matriz = [[0, 0, 0], [0, 0, 0], [0, 0, 0]] # Cria uma matriz 3x3 vazia.
+
+# for l in range(3): # percorre a linha da matriz.
+#     for c in range(3): # percorre a coluna da matriz.
+#         matriz[l][c] = int(input(f'Digite um valor para: [ {l} ] [ {c} ]: ')) # Adiciona o valor digitado a linha[l] na coluna[c].
+# print()
+
+# for l in matriz:
+#     for c in l:
+#         print(f'[ {c} ]', end='') # Percorre as colunas[c] de cada linha[l] da matriz e imprime o valor formatado. 
+#     print('\n')
