@@ -31,3 +31,29 @@ print(f'A lista completa é {lista}')
 print(f'A lista de pares é {par}')
 print(f'A lista de ímpares é {impar}')
 print()
+
+
+
+# PROGRAMA ALTERNATIVO
+
+# num = list()
+# pares = list()
+# impares = list()
+
+# while True:
+#     num.append(int(input('Digite um valor: ')))
+#     resp = str(input('Deseja continuar? [S/N] ')).upper().strip()[0]
+#     if resp in 'N':
+#         break
+
+# for n in num:
+#     if n % 2 == 0:
+#         pares.append(n)
+#     else:
+#         impares.append(n)
+
+# print('-=-' * 20)
+# print(f'A lista completa é {num}')
+# print(f'A lista de pares é {pares}')
+# print(f'A lista de ímpares é {impares}')
+# print()
