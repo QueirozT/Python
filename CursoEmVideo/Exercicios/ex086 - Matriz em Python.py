@@ -11,7 +11,7 @@ print()
 # Percorre as Listas dentro da Lista Composta.
 for l in lista:
     for c in l:
-        print(f'[ {c} ] ', end='') # Imprime o valor de cada Lista dentro da Lista Composta.
+        print(f'[{c:^5}]', end='') # Imprime o valor de cada Lista dentro da Lista Composta.
     print('\n')
 
 
@@ -40,5 +40,5 @@ for l in lista:
 
 # for l in matriz:
 #     for c in l:
-#         print(f'[ {c} ]', end='') # Percorre as colunas[c] de cada linha[l] da matriz e imprime o valor formatado. 
+#         print(f'[{c:^5}]', end='') # Percorre as colunas[c] de cada linha[l] da matriz e imprime o valor formatado. 
 #     print('\n')
