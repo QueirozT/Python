@@ -1,33 +1,43 @@
 print('===== EXERCÍCIO #080 =====')
 print()
 
-lista = list()
+lista = list() # Cria uma lista vazia
 
-for i in range(5):
+for c in range(5):
     valor = int(input('Digite um valor: '))
 
-    if i == 0:
+    if c == 0 or valor > lista[-1]: # Verifica se é o primeiro valor ou se é maior que o último da lista.
         lista.append(valor)
-        print('Primeiro valor adicionado a lista.')
-    elif valor >= lista[-1]:
-        lista.append(valor)
-        print('Valor adicionado ao final da lista.')
-    elif valor <= lista[0]:
-        lista.insert(0, valor)
-        print('Valor adicionado a posição 0.')
-    elif valor > lista[0] and valor <= lista[1]:
-        lista.insert(1, valor)
-        print('Valor adicionado a posição 1.')
-    elif valor > lista[1] and valor <= lista[2]:
-        lista.insert(2, valor)
-        print('Valor adicionado a posição 2.')
-    elif valor > lista[2] and valor <= lista[3]:
-        lista.insert(3, valor)
-        print('Valor adicionado a posição 3.')
-    elif valor > lista[3] and valor <= lista[4]:
-        lista.insert(4, valor)
-        print('Valor adicionado a posição 4.')
+        print('Adicionado ao final da lista.')
+    else:
+        for i in lista: # Verifica se o valor é menor ou igual a cada item da lista.
+            if valor <= i:
+                lista.insert(lista.index(i), valor) 
+                print(f'Adicionado a posição {lista.index(valor)} da lista.')
+                break
     print()
 
 print(f'Os valores adicionados em ordem foram: {lista}')
 print()
+
+
+# VERSÃO ALTERNATIVA DO PROGRAMA:
+
+# lista = [] # Cria uma lista vazia
+
+# for i in range(5):
+#     valor = int(input('Digite um valor: '))
+
+#     if i == 0 or valor >= lista[-1]: # Verifica se é o primeiro valor ou se é maior que o último da lista.
+#         lista.append(valor)
+#         print('Adicionado ao final da lista.')
+#     else:
+#         for i, v in enumerate(lista): # Pega a posição "i" e o valor "v" de cada item da lista.
+#             if valor <= v:
+#                 lista.insert(i,valor)
+#                 print(f'Adicionado na posição {i} da lista.')
+#                 break
+#     print()
+
+# print(f'Os valores adicionados em ordem foram: {lista}')
+# print()
