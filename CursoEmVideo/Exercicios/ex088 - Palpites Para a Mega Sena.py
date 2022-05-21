@@ -30,5 +30,5 @@ for r in range(q): # Criando um contador para o número de jogos.
     print(f'Jogo {r+1}: {lista[r]}') # Imprime a Lista[r]
     sleep(1) # Pausa de 1 segundo.
 
-print('-=-=-=-=-= < BOA SORTE > =-=-=-=-=-')
+print('-=-=-=-=-= < BOA SORTE! > =-=-=-=-=-')
 print()
