@@ -3,10 +3,10 @@ print()
 
 valor = input('Digite uma expressão matemática: ')
 
-abertura = valor.count('(')
-fechamento = valor.count(')')
+abertura = valor.count('(') # Conta quantas vezes aparece o caractere '('
+fechamento = valor.count(')') # Conta quantas vezes aparece o caractere ')'
 
-if abertura == fechamento and valor.find('(') < valor.find(')'):
+if abertura == fechamento and valor.find('(') < valor.find(')'): # Verifica qual apareceu primeiro e se a quantidade de ambos é a mesma.
     print('Expressão válida!')
 else:
     print('Expressão inválida!')
@@ -19,7 +19,7 @@ print()
 # expr = input('Digite uma expressão matemática: ')
 # pilha = []
 
-# for i in expr:
+# for i in expr: # Percorre a string e contabiliza se o caractere de abertura e fechamento estão na posição certa.
 #     if i == '(':
 #         pilha.append('(')
 #     elif i == ')':
@@ -29,7 +29,7 @@ print()
 #             pilha.append(')')
 #             break
 
-# if len(pilha) == 0:
+# if len(pilha) == 0: # Verifica se a pilha está vazia. Se estiver, a expressão é válida.
 #     print('Expressão válida!')
 # else:
 #     print('Expressão inválida!')
