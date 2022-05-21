@@ -12,6 +12,8 @@ print()
 
 
 # AS TUPLAS TAMBÉM POSSUEM MÉTODOS, COMO:
+#=======================================#
+
 # .count(valor) - Retorna a quantidade de ocorrências de um valor dentro da tupla.
 # .index(valor) - Retorna o índice da primeira ocorrência de um valor. Pode procurar a partir de um índice específico. EX: .index('t', 2).
 # del(tupla) - Remove a tupla.
@@ -38,6 +40,8 @@ print()
 
 
 # AS LISTAS TAMBÉM POSSUEM MÉTODOS, COMO:
+#=======================================#
+
 # len(lista) - Retorna o tamanho da lista.
 # max(lista) - Retorna o maior valor da lista.
 # min(lista) - Retorna o menor valor da lista.
