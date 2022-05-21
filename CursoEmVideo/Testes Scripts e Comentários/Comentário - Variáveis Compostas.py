@@ -67,18 +67,25 @@ print()
 
 # LISTAS COMPOSTAS - As listas compostas são listas que armazenam outras listas, e podem ser acessadas como listas normais.
 
-# As listas compostas também possúem índice, porém dentro de cada índice existe uma lista com o próprio índice. Exemplo:
+# As listas compostas também possúem índice, porém, dentro de cada índice existe uma lista com o próprio índice.
 
-# lista_composta = [lista_01, lista_02, lista_03]
+# Quando for criar uma lista composta a partir de outras listas, deve-se criar uma copia da lista que será vinculada.
+# Ou o Python irá ligar a lista original ao novo índice, e sempre que a lista original for alterada, a lista composta também será alterada.
+# EX:
 # lista_01 = [1, 2, 3]
 # lista_02 = [4, 5, 6]
 # lista_03 = [7, 8, 9]
+# lista_composta = [lista_01, lista_02, lista_03]
+# lista_01[0] = 10
+# lista_composta == [[10, 2, 3], [4, 5, 6], [7, 8, 9]]
 
-# lista_composta = [[1, 2, 3], [4, 5, 6], [7, 8, 9]]
+# O correto quando criar uma lista composta utilizando outras listas é utilizar .copy() ou [:] para criar uma cópia. EX:
+# lista_composta = [lista_01[:], lista_02.copy(), lista_03[:]]
 
-# Para acessar os valores de uma lista composta, basta utilizar o índice da lista que está dentro da lista composta. 
-# EX:
-# lista_composta[0][0] = 1
+
+# Para acessar os valores de uma lista composta, basta utilizar o índice referente a lista desejada seguido do índice do valor desejado. 
+# Exemplo: 
+# lista_composta[0][0] = 10
 # lista_composta[0][1] = 2
 # lista_composta[0][2] = 3
 
@@ -96,3 +103,5 @@ print(lista_composta[1][0])
 print(lista_composta[2][0])
 print()
 
+
+#
