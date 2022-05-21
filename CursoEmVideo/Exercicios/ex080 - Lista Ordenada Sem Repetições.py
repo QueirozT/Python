@@ -10,7 +10,7 @@ for c in range(5):
         lista.append(valor)
         print('Adicionado ao final da lista.')
     else:
-        for i in lista: # Verifica se o valor é menor ou igual a cada item da lista.
+        for i in lista: # Pega cada item "i" da lista.
             if valor <= i:
                 lista.insert(lista.index(i), valor) 
                 print(f'Adicionado a posição {lista.index(valor)} da lista.')
