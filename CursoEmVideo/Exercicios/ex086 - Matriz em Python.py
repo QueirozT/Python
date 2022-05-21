@@ -38,7 +38,7 @@ for l in lista:
 #         matriz[l][c] = int(input(f'Digite um valor para: [ {l} ] [ {c} ]: ')) # Adiciona o valor digitado a linha[l] na coluna[c].
 # print()
 
-# for l in matriz:
-#     for c in l:
-#         print(f'[{c:^5}]', end='') # Percorre as colunas[c] de cada linha[l] da matriz e imprime o valor formatado. 
+# for l in range(3):
+#     for c in range(3):
+#         print(f'[{matriz[l][c]:^5}]', end='') # Percorre as colunas[c] de cada linha[l] da matriz e imprime o valor formatado. 
 #     print('\n')
