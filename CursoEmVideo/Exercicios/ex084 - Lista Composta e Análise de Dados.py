@@ -12,10 +12,11 @@ while True:
 
     if len(lista) == 1:
         mais = menos = peso
-    elif peso > mais:
-        mais = peso
-    elif peso < menos:
-        menos = peso
+    else:
+        if peso > mais:
+            mais = peso
+        if peso < menos:
+            menos = peso
 
     while True:
         opcao = str(input('Deseja continuar? [S/N] ')).strip().upper()[0]
