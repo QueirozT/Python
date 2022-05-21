@@ -1,8 +1,10 @@
 print('===== EXERCÍCIO #082 =====')
 print()
 
-# Inicializando as variáveis
-lista = par = impar = list()
+# Inicializando as variáveis. Ps: As listas não podem ser inicializadas juntas, porque acabam referenciando o mesmo espaço na memória.
+lista = list()
+par = []
+impar = []
 
 while True:
     valor = int(input('Digite um valor: '))
