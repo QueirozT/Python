@@ -3,8 +3,8 @@ print()
 
 lista = [[],[]] # Criando uma lista composta com duas listas vazias.
 
-for i in range(7):
-    valor = int(input(f'Digite o {i + 1}º número: '))
+for i in range(1, 8):
+    valor = int(input(f'Digite o {i}º número: '))
     print()
 
     if valor % 2 == 0: # Verificando se o valor é par ou impar e adicionando na lista correspondente.
