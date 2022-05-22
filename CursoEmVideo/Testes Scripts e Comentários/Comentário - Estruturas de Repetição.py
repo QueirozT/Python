@@ -57,8 +57,16 @@ print('=' * 22)
 print()
 
 
+# EXEMPLO 06: Mostrar todos os valores de um dicionário e os indices
+dicionario = {'chave01': 'Valor 01', 'chave02': 'Valor 02', 'chave03': 'Valor 03'}
+print('EXEMPLO 06: Mostrar todos os valores de um dicionário e os indices')
+for i, v in dicionario.items(): # Desta forma a posição 'i' recebe o índice e o item 'v' recebe o valor de cada elemento do dicionário.
+    print(f'{f"{i} na posição {v}":^10}')
+print('=' * 22)
+print()
 
 # ===========================================================================================
+
 
 # ESTRUTURA DE REPETIÇÃO (WHILE) OU "ESTRUTURA DE REPETIÇÃO COM TESTE LÓGICO" (while == enquanto):
 
