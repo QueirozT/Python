@@ -61,7 +61,18 @@ print()
 dicionario = {'chave01': 'Valor 01', 'chave02': 'Valor 02', 'chave03': 'Valor 03'}
 print('EXEMPLO 06: Mostrar todos os valores de um dicionário e os indices')
 for i, v in dicionario.items(): # Desta forma a posição 'i' recebe o índice e o item 'v' recebe o valor de cada elemento do dicionário.
-    print(f'{f"{i} na posição {v}":^10}')
+    print(f'{f"Indice: {i} Valor: {v}":^10}')
+print('=' * 22)
+print()
+
+
+# EXEMPLO 07: Mostrar todos os valores de um dicionário Composto e os indices
+dicionario_composto = {'chave01': {'subchave01': 'Valor 01', 'subchave02': 'Valor 02', 'subchave03': 'Valor 03'}}
+print('EXEMPLO 07: Mostrar todos os valores de um dicionário Composto e os indices')
+for i, v in dicionario_composto.items():
+    print(f'{f"Indice: {i} - Dicionário Interno: {v}":^10}') # Imprimindo as primeiras chaves e valores do dicionário composto.
+    for i2, v2 in v.items():
+        print(f'{f"Sub-Indice: {i2} - Valor: {v2}":^10}') # Imprimindo as chaves internas e valores do dicionário composto.
 print('=' * 22)
 print()
 
