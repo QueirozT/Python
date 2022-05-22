@@ -5,6 +5,9 @@
 # TUPLAS - As tuplas são variáveis compostas que armazenam mais de um valor dentro de (). Após serem criadas, não podem ser alteradas.
 
 # EXEMPLO 01: Criando uma tupla (O uso de () é opcional nas tuplas)
+from re import S
+
+
 print('EXEMPLO 01: Criando uma tupla')
 tupla = (1, 2, 3, 'Valor 01', 'Valor 02', 'Valor 03')
 print(tupla)
@@ -151,8 +154,8 @@ print()
 #============================================#
 
 # dicionario['chave'] = valor - Atualiza o valor de uma chave específica e cria uma nova chave caso não exista.
-# del dicionario['chave'] - Remove um valor de uma chave específica.
 # .copy() - Cria uma cópia do dicionário. Muito importante para não alterar o dicionário original.
+# del dicionario['chave'] - Remove um valor de uma chave específica.
 
 # .values() - Retorna uma lista com os valores do dicionário.
 # .keys() - Retorna uma lista com os nomes dos índices do dicionário.
@@ -166,3 +169,17 @@ print()
 # .popitem() - Remove um valor aleatório do dicionário.
 
 #=====================================================================================================================
+
+# Criando e lendo um dicionário dentro de uma lista
+# EXEMPLO 11: Criando um dicionário dentro de uma lista e lendo o dicionário
+print('EXEMPLO 11: Criando um dicionário dentro de uma lista e lendo o dicionário')
+estado01 = {'uf': 'Rio de Janeiro', 'sigla': 'RJ'}
+estado02 = {'uf': 'São Paulo', 'sigla': 'SP'}
+estado03 = {'uf': 'Minas Gerais', 'sigla': 'MG'}
+brasil = [estado01, estado02, estado03]
+for i in brasil: # i = cada item da lista
+    print(i) # Lendo cada item da lista (dicionário)
+    for k, v in i.items(): # k = nome do índice e v = valor do índice
+        print(f'{k} = {v}', end=' ') # Lendo cada item do dicionário (chave e valor)
+    print()
+print()
