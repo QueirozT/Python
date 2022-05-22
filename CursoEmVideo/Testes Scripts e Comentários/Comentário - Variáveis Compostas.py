@@ -102,3 +102,67 @@ print(lista_composta[0][0])
 print(lista_composta[1][0])
 print(lista_composta[2][0])
 print()
+
+# ======================================================================================================================
+
+
+# DICIONÁRIOS - Os dicionários são variáveis compostas que armazenam mais de um valor dentro de {} (Chaves).
+
+# Os dicionários servem para armazenar valores assim como as listas, porém, ao invés de índices numéricos, os índices são nomes.
+
+# Para criar um dicionário, basta utilizar {} ou dict().
+
+# EXEMPLO 06: Criando um dicionário
+print('EXEMPLO 06: Criando um dicionário')
+dicionario = {'nome': 'Pedro', 'idade': 32}
+print(dicionario)
+print()
+
+# Para acessar os valores de um dicionário, basta utilizar o nome do índice referente ao valor desejado.
+# EXEMPLO 07: Acessando os valores de um dicionário
+print('EXEMPLO 07: Acessando os valores de um dicionário')
+print(dicionario['nome'])
+print(dicionario['idade'])
+print()
+
+# Para varrer todos os valores de um dicionário, basta utilizar o for.
+# EXEMPLO 08: Acessando todos os valores de um dicionário
+print('EXEMPLO 08: Acessando todos os valores de um dicionário')
+for k, v in dicionario.items():
+    print(k, v) # k "Key" e v "Value" | k = nome e v = Pedro
+print()
+
+# Também é possível criar dicionários dentro de listas, dicionários dentro de dicionários e vice-versa.
+# EXEMPLO 09: Criando um dicionário dentro de outro dicionário
+print('EXEMPLO 09: Criando um dicionário dentro de outro dicionário')
+dicionario_02 = {'nome': 'Pedro', 'idade': 32, 'filhos': {'nome': 'Maria', 'idade': 25}}
+print(dicionario_02)
+print()
+
+# EXEMPLO 10: Acessando os valores de um dicionário dentro de outro dicionário
+print('EXEMPLO 10: Acessando os valores de um dicionário dentro de outro dicionário')
+print(f'Dicionário: {dicionario_02.items()}')
+print(f'Filhos: {dicionario_02["filhos"]}')
+print(f'Nome do filho: {dicionario_02["filhos"]["nome"]}')
+print()
+
+
+# OS DICIONÁRIOS TAMBÉM POSSUEM MÉTODOS, COMO:
+#============================================#
+
+# dicionario['chave'] = valor - Atualiza o valor de uma chave específica e cria uma nova chave caso não exista.
+# del dicionario['chave'] - Remove um valor de uma chave específica.
+# .copy() - Cria uma cópia do dicionário. Muito importante para não alterar o dicionário original.
+
+# .values() - Retorna uma lista com os valores do dicionário.
+# .keys() - Retorna uma lista com os nomes dos índices do dicionário.
+# .items() - Retorna uma lista com tuplas com os índices e valores do dicionário.
+
+# .get(chave) - Retorna o valor de uma chave específica.
+# .update(dicionario) - Atualiza o dicionário com os valores de outro dicionário.
+
+# .clear() - Limpa o dicionário.
+# .pop(chave) - Remove um valor de uma chave específica.
+# .popitem() - Remove um valor aleatório do dicionário.
+
+#=====================================================================================================================
