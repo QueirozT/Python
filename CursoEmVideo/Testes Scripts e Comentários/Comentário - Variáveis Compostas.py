@@ -5,7 +5,6 @@
 # TUPLAS - As tuplas são variáveis compostas que armazenam mais de um valor dentro de (). Após serem criadas, não podem ser alteradas.
 
 # EXEMPLO 01: Criando uma tupla (O uso de () é opcional nas tuplas)
-from re import S
 
 
 print('EXEMPLO 01: Criando uma tupla')
