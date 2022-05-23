@@ -75,3 +75,6 @@ print(f'O {nome} tem {idade} anos e recebe R${salario:.2f}.') # Formatação de 
 
 print(f'{nome:=^20}') # Alinha o texto ao centro com o total de 20 caracteres.
 print(f'{f"O {nome} tem {idade} anos.":^40}') # Utilizando formatação com interpolação de strings.
+
+
+# OBS: Usando F-String ou .format() não é possível formatar utilizando "{:^10}" em valores que não sejam strings é preciso converter.
