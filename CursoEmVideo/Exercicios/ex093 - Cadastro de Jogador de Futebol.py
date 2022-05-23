@@ -14,7 +14,7 @@ totalGols = int(input(f'Quantas partidas {jogador["Nome"]} jogou? '))
 
 # Iniciando o loop para coletar os gols.
 for i in range(1, totalGols + 1):
-    Gols.append(int(input(f'Quantos gols na {i}° partida? ')))
+    Gols.append(int(input(f'  Quantos gols na {i}° partida? ')))
 
 # Adicionando a lista de gols e a quantidade de partidas ao dicionário.
 jogador['Gols'] = Gols.copy() # Copiando a lista para não alterar a original.
