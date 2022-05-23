@@ -1,9 +1,11 @@
 print('===== EXERCÍCIO #094 =====')
 print()
 
+# Iniciando o dicionário e a lista
 pessoa = dict()
 lista = list()
 
+# Entrada de dados
 while True:
     pessoa['Nome'] = str(input('Nome: ')).title().strip()
     print()
@@ -18,16 +20,20 @@ while True:
     pessoa['Idade'] = int(input('Idade: '))
     print()
 
+    # Adicionando os dados a lista
     lista.append(pessoa.copy())
 
+    # limpando os dados para o próximo loop.
     pessoa.clear()
 
+    # Verificando se o usuário deseja continuar
     while True:
         opcao = str(input('Deseja continuar? [S/N] ')).upper().strip()[0]
         if opcao in 'SN':
             break
         print(f'"{opcao}" não é uma opção válida. Por favor, digite apenas Sim "S" ou Não "N".')
     
+    # Finalizando o loop
     if opcao == 'N':
         break
     print()
@@ -39,7 +45,8 @@ print()
 print(f'Ao todo temos {len(lista)} pessoas cadastradas.')
 print()
 
-media = sum(pessoa['Idade'] for pessoa in lista) / len(lista) # Forma resumida de fazer um for através do método sum()
+# Forma resumida de fazer um for através do método sum() e obter a média.
+media = sum(pessoa['Idade'] for pessoa in lista) / len(lista)
 print(f'A média de idade é de {media:.0f} anos.')
 print()
 
