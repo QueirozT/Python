@@ -188,3 +188,16 @@ print()
 # OBS: O itemgetter(1) é o índice referente ao "valor" da chave e o itemgetter(0) é o índice referente ao "nome" da chave.
 
 #=====================================================================================================================
+
+# EXTRA:
+
+# Existem formulas para calcular variáveis compostas como dicionários e listas. uma delas é a formula de média.
+
+# Para calcular a média de um dicionário dentro de uma lista, basta somar todos os valores de cada chave e dividir pelo número de chaves.
+# EX: sum(biblioteca[referencia] for identificador in lista) / len(lista)
+print('EXEMPLO DE CALCULO DE MÉDIA DE VALORES DE UM DICIONÁRIO DENTRO DE UMA LISTA')
+lista = [{'nome': 'Pedro', 'idade': 32}, {'nome': 'Maria', 'idade': 25}]
+media = sum(lista['idade'] for lista in lista) / len(lista)
+print(lista)
+print(f'MÉDIA DAS IDADES: {media:.0f}')
+print()
