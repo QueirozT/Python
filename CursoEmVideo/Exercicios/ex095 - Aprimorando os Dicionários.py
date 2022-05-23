@@ -2,7 +2,7 @@ print('===== EXERCÍCIO #095 =====')
 print()
 
 jogador = dict() # Criando um dicionário vazio
-jogadores = list() # Criando uma lista vazia
+time = list() # Criando uma lista vazia
 gols = [] # Criando uma lista vazia
 
 while True:
@@ -18,7 +18,7 @@ while True:
 
     jogador['Total'] = sum(gols) # Adicionando a soma de todos os gols ao dicionário.
 
-    jogadores.append(jogador.copy()) # Adicionando todos os valores do dicionário a uma lista.
+    time.append(jogador.copy()) # Adicionando todos os valores do dicionário a uma lista.
 
     gols.clear() # Limpando a lista para a próxima repetição.
     jogador.clear() # Limpando o dicionário para a próxima repetição.
@@ -35,16 +35,16 @@ while True:
     print()
 print()
 
-# Imprimindo a tabela com os dados dos jogadores.
+# Imprimindo a tabela com os dados do time.
 print(f'{"N°":>3} {"NOME":<10} {"GOLS":<18} {"TOTAL":<5}')
 print('-' * 40)
 
 # Para imprimir os dados, tive que converter a lista para string, pois a lista era de números inteiros, então não aceitava F-String.
-for i in range(len(jogadores)):
-    print(f'{i:^3} {jogadores[i]["Nome"]:<10} {str(jogadores[i]["Gols"]):<18} {jogadores[i]["Total"]:^6}')
+for i in range(len(time)):
+    print(f'{i:^3} {time[i]["Nome"]:<10} {str(time[i]["Gols"]):<18} {time[i]["Total"]:^6}')
 print('-' * 40)
 
-while True: # Loop para mostrar detalhes dos jogadores.
+while True: # Loop para mostrar detalhes do time.
     while True: # Loop para verificar se o usuário quer ver os detalhes de um jogador.
         print()
         opcao = str(input('Deseja ver os dados de algum jogador? [S/N] ')).upper().strip()[0]
@@ -64,10 +64,10 @@ while True: # Loop para mostrar detalhes dos jogadores.
         if jogador.isnumeric(): # Verificando se um numero foi digitado
             jogador = int(jogador)
 
-            if jogador >= 0 and jogador < len(jogadores): # Verificando se o jogador existe.
-                print(f'-- Levantamento do Jogador {jogadores[jogador]["Nome"]} --')
-                for i in range(len(jogadores[jogador]['Gols'])):
-                    print(f'    No {i + 1}° jogo fez {jogadores[jogador]["Gols"][i]} Gols.')
+            if jogador >= 0 and jogador < len(time): # Verificando se o jogador existe.
+                print(f'-- Levantamento do Jogador {time[jogador]["Nome"]} --')
+                for i in range(len(time[jogador]['Gols'])):
+                    print(f'    No {i + 1}° jogo fez {time[jogador]["Gols"][i]} Gols.')
             else:
                 print(f'Jogador "{jogador}" não encontrado!')
         else:
