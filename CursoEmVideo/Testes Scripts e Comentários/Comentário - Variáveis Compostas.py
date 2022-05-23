@@ -150,6 +150,21 @@ print(f'Nome do filho: {dicionario_02["filhos"]["nome"]}')
 print()
 
 
+# Criando e lendo um dicionário dentro de uma lista
+# EXEMPLO 11: Criando um dicionário dentro de uma lista e lendo o dicionário
+print('EXEMPLO 11: Criando um dicionário dentro de uma lista e lendo o dicionário')
+estado01 = {'uf': 'Rio de Janeiro', 'sigla': 'RJ'}
+estado02 = {'uf': 'São Paulo', 'sigla': 'SP'}
+estado03 = {'uf': 'Minas Gerais', 'sigla': 'MG'}
+brasil = [estado01, estado02, estado03]
+for i in brasil: # i = cada item da lista
+    print(i) # Lendo cada item da lista (dicionário)
+    for k, v in i.items(): # k = nome do índice e v = valor do índice
+        print(f'{k} = {v}', end=' ') # Lendo cada item do dicionário (chave e valor)
+    print()
+print()
+
+
 # OS DICIONÁRIOS TAMBÉM POSSUEM MÉTODOS, COMO:
 #============================================#
 
@@ -168,18 +183,8 @@ print()
 # .pop(chave) - Remove um valor de uma chave específica.
 # .popitem() - Remove um valor aleatório do dicionário.
 
-#=====================================================================================================================
+# sorted(dicionario key=itemgetter(1)) - Retorna uma lista com os valores do dicionário ordenados em forma de tuplas.
+# O itemgetter() é uma função que retorna um valor de uma chave específica e precisa ser importado e passada como parâmetro.
+# OBS: O itemgetter(1) é o índice referente ao "valor" da chave e o itemgetter(0) é o índice referente ao "nome" da chave.
 
-# Criando e lendo um dicionário dentro de uma lista
-# EXEMPLO 11: Criando um dicionário dentro de uma lista e lendo o dicionário
-print('EXEMPLO 11: Criando um dicionário dentro de uma lista e lendo o dicionário')
-estado01 = {'uf': 'Rio de Janeiro', 'sigla': 'RJ'}
-estado02 = {'uf': 'São Paulo', 'sigla': 'SP'}
-estado03 = {'uf': 'Minas Gerais', 'sigla': 'MG'}
-brasil = [estado01, estado02, estado03]
-for i in brasil: # i = cada item da lista
-    print(i) # Lendo cada item da lista (dicionário)
-    for k, v in i.items(): # k = nome do índice e v = valor do índice
-        print(f'{k} = {v}', end=' ') # Lendo cada item do dicionário (chave e valor)
-    print()
-print()
+#=====================================================================================================================
