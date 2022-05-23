@@ -61,7 +61,6 @@ while True: # Loop para mostrar detalhes dos jogadores.
         print()
         jogador = input('Qual o "Número" do jogador? ').strip()
         
-        print()
         if jogador.isnumeric(): # Verificando se um numero foi digitado
             jogador = int(jogador)
 
