@@ -3,7 +3,7 @@ print()
 
 jogador = dict() # Criando um dicionário vazio
 time = list() # Criando uma lista vazia
-gols = [] # Criando uma lista vazia
+partidas = [] # Criando uma lista vazia
 
 while True:
     jogador['Nome'] = str(input('Nome do Jogador: ')).title().strip() # Adicionando o nome do jogador ao dicionário
@@ -12,15 +12,15 @@ while True:
 
     # Adicionando valores dos gols a uma lista vazia.
     for i in range(1, jogador['Partidas'] + 1):
-        gols.append(int(input(f'  Quantos gols na {i}° partida? ')))
-    jogador['Gols'] = gols.copy() # Copiando a lista para o dicionário.
+        partidas.append(int(input(f'  Quantos gols na {i}° partida? ')))
+    jogador['Gols'] = partidas.copy() # Copiando a lista para o dicionário.
     print()
 
-    jogador['Total'] = sum(gols) # Adicionando a soma de todos os gols ao dicionário.
+    jogador['Total'] = sum(partidas) # Adicionando a soma de todos os gols ao dicionário.
 
     time.append(jogador.copy()) # Adicionando todos os valores do dicionário a uma lista.
 
-    gols.clear() # Limpando a lista para a próxima repetição.
+    partidas.clear() # Limpando a lista para a próxima repetição.
     jogador.clear() # Limpando o dicionário para a próxima repetição.
 
     # Verificando se o usuário deseja adicionar mais dados a lista.
