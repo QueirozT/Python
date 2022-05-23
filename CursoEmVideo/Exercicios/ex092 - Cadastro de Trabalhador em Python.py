@@ -10,10 +10,12 @@ trabalhador = {}
 trabalhador['Nome'] = str(input('Nome: '))
 trabalhador['Idade'] = date.today().year - int(input('Ano de Nascimento: '))
 trabalhador['Carteira de Trabalho'] = int(input('Carteira de Trabalho (0 não tem): '))
+
+# Verificando se ele tem carteira de trabalho.
 if trabalhador['Carteira de Trabalho'] > 0:
     trabalhador['Ano de Contratação'] = int(input('Ano de Contratação: '))
     trabalhador['Salário'] = float(input('Salario: R$'))
-    trabalhador['Aposentadoria'] = trabalhador['Idade'] + 35 - (date.today().year - trabalhador['Ano de Contratação'])
+    trabalhador['Aposentadoria'] = trabalhador['Idade'] - (date.today().year - trabalhador['Ano de Contratação'])  + 35
 print()
 
 print('-=' * 30)
