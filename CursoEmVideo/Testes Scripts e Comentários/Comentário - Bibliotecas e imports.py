@@ -72,3 +72,11 @@
 # datetime.isoformat(valor) #Retorna uma string a partir de uma data e hora.
 # datetime.fromordinal(valor) #Retorna uma data a partir de um número de dia.
 
+
+# - BIBLIOTECA OPERATOR: utilizada para realizar operações de strings. (CONSULTAR COMENTÁRIO DE VARIÁVEIS COMPOSTAS)
+
+# from operator import itemgetter, attrgetter, methodcaller # Importa os módulos "itemgetter", "attrgetter" e "methodcaller".
+
+# itemgetter(valor) #Retorna um método que retorna um item de uma lista.
+# attrgetter(valor) #Retorna um método que retorna um atributo de uma lista.
+# methodcaller(valor) #Retorna um método que chama um método de uma lista.
