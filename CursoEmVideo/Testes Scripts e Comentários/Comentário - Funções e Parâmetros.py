@@ -26,13 +26,47 @@ lin()
 # Os parâmetros também podem receber valores padrões que serão utilizados caso nenhum valor seja passado na chamada da função.
 
 # Como definir um parâmetro?
-# Para definir um parâmetro, é só colocar o nome da variável entre os parênteses() da função.
-# EXEMPLO: Definindo um parâmetro de tamanho para a função lin().
-def lin(tam=40):
-    print('-' * tam)
+# Para definir um parâmetro, é só colocar o nome da variável, ou os nomes das variáveis entre os parênteses() da função.
+# EXEMPLO: Definindo um parâmetro com uma mensagem para ser exibida formatada.
+def msg(text):
+    print('-' * (len(text) + 10))
+    print(f'{text:^{len(text) + 10}}')
+    print('-' * (len(text) + 10))
+
 
 
 # Como chamar uma função com parâmetros?
 # Para chamar uma função com parâmetros, é só colocar os valores dos parâmetros entre os parênteses() da função.
-# EXEMPLO: Chamando a função lin() com o parâmetro de tamanho 30.
-lin(30)
+# EXEMPLO: Chamando a função msg() com o texto dentro do parâmetro.
+msg('Mensagem de Teste!')
+
+
+# É possível definir mais de um parâmetro.
+# EXEMPLO: Definindo dois parâmetros para uma função de soma.
+def soma(a, b):
+    print(a + b)
+
+
+# Como chamar uma função com mais de um parâmetro?
+# Para chamar uma função com mais de um parâmetro, é só colocar os valores dos parâmetros entre os parênteses() da função.
+# EXEMPLO: Chamando a função soma() com os valores dentro dos parâmetros.
+soma(10, 20)
+
+
+# É possível também criar uma função com muitos comandos e retornar apenas um valor.
+# EXEMPLO: Definindo uma função que retorna o valor do fatorial(!) de um número.
+def fat(num):
+    ant = num
+    res = 0
+    
+    for i in range(num):
+        ant -= 1
+        res += num * ant
+        num = ant
+    
+    return res
+
+
+# Como chamar uma função que retorna um valor?
+# EXEMPLO: Chamando a função fat() com o valor que será calculado dentro do parâmetro e exibindo o resultado.
+print('O fatorial de 4 é: ', fat(4))
