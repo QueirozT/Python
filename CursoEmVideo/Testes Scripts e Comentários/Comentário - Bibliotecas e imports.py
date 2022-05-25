@@ -43,7 +43,7 @@
 
 # - BIBLIOTECA TIME: utilizada para realizar operações de tempo.
 
-# import time
+# import time # Para utilizar a biblioteca time em loops com impressões, é necessário habilitar o flush do print.
 
 # time.time() #Retorna o tempo atual em segundos.
 # time.localtime() #Retorna um tuplo com as informações de tempo.
