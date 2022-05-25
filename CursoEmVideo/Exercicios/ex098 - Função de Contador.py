@@ -6,6 +6,7 @@ print()
 def contador(ini=0, fim=0, pas=0):
     print('=' * 30)
     print(f'Contando de {ini} até {fim} de {pas} em {pas}')
+    sleep(2.5)
 
     if ini < fim:
         if pas < 0:
