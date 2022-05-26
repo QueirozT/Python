@@ -13,7 +13,7 @@ def sortear(lista):
     print('PRONTO!\n')
 
 
-def somaPares(lista):
+def somaPar(lista):
     print('Somando os valores pares de: ', end='')
     soma = 0
     for i in lista:
@@ -28,4 +28,4 @@ def somaPares(lista):
 valores = list()
 
 sortear(valores)
-somaPares(valores)
+somaPar(valores)
