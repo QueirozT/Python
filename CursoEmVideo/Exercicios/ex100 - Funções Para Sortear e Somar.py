@@ -14,14 +14,11 @@ def sortear(lista):
 
 
 def somaPar(lista):
-    print('Somando os valores pares de: ', end='')
     soma = 0
     for i in lista:
-        print(f'{i}', end=', ', flush=True)
-        sleep(0.5)
         if i % 2 == 0:
             soma += i
-    print(f'temos {soma}!\n')
+    print(f'Somando os valores pares de {lista} temos {soma}!\n')
 
 
 # Programa Principal
