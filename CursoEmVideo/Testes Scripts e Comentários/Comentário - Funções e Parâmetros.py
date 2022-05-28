@@ -164,3 +164,24 @@ print('\n EX 08 - Chamando uma função com um parâmetro opcional.')
 opcional('João')
 print('Com o parâmetro opcional fica: ')
 opcional("João", "Silva")
+
+
+
+# Variável global.
+# ============== #
+
+# A variável global é uma variável que pode ser acessada de qualquer lugar do programa.
+# Dentro de uma função, todas as variáveis utilizadas tem escopo local, só funcionam dentro da função.
+# Para utilizar uma variável global dentro de uma função, é necessário declarar ela como global no inicio da função.
+# EXEMPLO: Definindo uma variável global.
+def funcao():
+    global variavel
+    variavel = 4
+
+
+# Se uma variável for declarada como global dentro de uma função, o que for feito dentro da função irá acontecer com a variável fora dela.
+# EXEMPLO: Chamando a função funcao() e exibindo o valor da variável global.
+print('\n EX 09 - Definindo uma variável global.')
+variavel = 2
+funcao()
+print(f'A variável valia 2, por causa do chamado "global" dentro da função, a variável vale {variavel}')
