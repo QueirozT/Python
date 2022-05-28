@@ -139,3 +139,28 @@ def lista(l):
 # EXEMPLO: Chamando a função lista() com a lista que será passada dentro do parâmetro.
 print('\n EX 07 - Chamando uma função com uma lista como parâmetro.')
 lista([1, 2, 3, 4, 5, 6, 7, 8, 9, 10])
+
+
+
+# Parâmetros opcionais.
+# =================== #
+
+# Os parâmetros opcionais são os parâmetros que não são obrigatórios e que mesmo que não sejam passados, o programa irá executar a função.
+# Para definir um parâmetro opcional, é só colocar um = no final do parâmetro.
+# EXEMPLO: Definindo uma função que recebe um parâmetro opcional.
+def opcional(nome, sobrenome=''):
+    """
+    -> Esta função recebe um parâmetro opcional.
+    :param nome: O primeiro parâmetro é obrigatório.
+    :param sobrenome: O segundo parâmetro é opcional.
+    :return: Não retorna nada.
+    """
+    print(f'Olá {nome} {sobrenome}!')
+
+
+# Como chamar uma função com um parâmetro opcional?
+# EXEMPLO: Chamando a função opcional() com os valores que serão passados dentro dos parâmetros.
+print('\n EX 08 - Chamando uma função com um parâmetro opcional.')
+opcional('João')
+print('Com o parâmetro opcional fica: ')
+opcional("João", "Silva")
