@@ -39,3 +39,6 @@ while True:
     print('\033[7;40m')
     help(nome)
     print('\033[m')
+
+print('Saindo do programa...')
+print()
