@@ -44,3 +44,25 @@ print(fatorial(valor, show)) # Chamando a função e exibindo o resultado.
 print()
 
 help(fatorial) # Exibindo a documentação da função (DocString).
+
+
+
+# Forma alternativa de criar uma função com parâmetros opcionais.
+
+
+# def fatorial(n, show=False):
+#     """
+#     -> Calcula o fatorial de um número.
+#     : n = o número a ser calculado.
+#     : show = (opcional) mostra ou não a conta.
+#     : return: o valor do fatorial de um número.
+#     # Criada por Tiago.
+#     """
+#     f = 1
+
+#     for c in range(n, 0, -1):
+#         if show:
+#             print(c, 'x' if c > 1 else '=', end=' ')
+#         f *= c
+
+#     return f
