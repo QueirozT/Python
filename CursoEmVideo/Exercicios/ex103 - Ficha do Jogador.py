@@ -2,7 +2,7 @@ print('===== EXERCÍCIO #103 =====')
 print()
 
 
-def jogador(n='<desconhecido>', g='0'):
+def jogador(n='<desconhecido>', g=0):
     """
     -> Função para cadastrar dados de um jogador.
     :n = Nome do jogador.
