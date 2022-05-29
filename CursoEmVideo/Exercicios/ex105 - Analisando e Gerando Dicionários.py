@@ -19,11 +19,11 @@ def analisar(tupla, sit=False):
     
     if sit:
         if aluno['Média'] >= 7:
-            aluno['Situação'] = 'Aprovado'
+            aluno['Situação'] = 'Boa!'
         elif aluno['Média'] >= 5:
-            aluno['Situação'] = 'Recuperação'
+            aluno['Situação'] = 'Razoável!'
         else:
-            aluno['Situação'] = 'Reprovado'
+            aluno['Situação'] = 'Ruim!'
     
     return aluno
 
