@@ -2,7 +2,8 @@
 
 # Funções ou Rotinas, são comandos pré definidos para executar ações. No python, as funções são definidas com o comando def.
 # Após criar uma definição de função, é possível chamar a função através do nome da função.
-# Sempre que criar uma def, deve dar duas linhas de espaço para manter o código limpo.
+# Sempre deve se criar uma def no início do programa ou antes do chamado da função.
+# E deve sempre manter duas linhas de espaço entre a "def" e outras linhas para manter o código limpo.
 
 
 #  Como criar uma função?
