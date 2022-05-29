@@ -4,6 +4,12 @@ print()
 
 # Definindo a função que irá retornar a idade e se pode votar ou não.
 def votar(ano):
+    """
+    -> Função que retorna a idade e se pode ou não votar.
+    : ano = ano de nascimento do usuário.
+    : return: idade e se pode ou não votar.
+    # Criada por Tiago.
+    """
     from datetime import date # Importando a biblioteca dentro da função que vai usa-la, poupa muito espaço de memória.
 
     idade = date.today().year - ano # Calculando a idade do usuário.
