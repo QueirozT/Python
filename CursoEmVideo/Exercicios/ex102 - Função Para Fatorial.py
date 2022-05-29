@@ -28,10 +28,10 @@ def fatorial(num, show=False): # Definindo a função com o parâmetro (Opcional
 
 
 # Programa Principal
-valor = int(input('Qual o valor que deseja descobrir o fatorial? '))
+valor = int(input('Qual o valor que deseja descobrir o fatorial? ')) # Solicitando o valor a ser calculado.
 
 while True:
-    opcao = str(input('Deseja mostrar o processo de cálculo? [S/N] ')).upper().strip()[0]
+    opcao = str(input('Deseja mostrar o processo de cálculo? [S/N] ')).upper().strip()[0] # Verificando se quer ver os cálculos.
     if opcao in 'SN':
         break
     print('ERRO! Digite apenas S ou N.')
@@ -40,7 +40,7 @@ if opcao == 'S':
 else:
     show = False
 
-print(fatorial(valor, show))
+print(fatorial(valor, show)) # Chamando a função e exibindo o resultado.
 print()
 
 help(fatorial) # Exibindo a documentação da função (DocString).
