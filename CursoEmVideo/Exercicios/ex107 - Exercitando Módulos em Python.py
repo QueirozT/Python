@@ -7,5 +7,5 @@ v = float(input('Digite o preço: R$'))
 
 print(f'A metade de {v} é {moeda.metade(v)}.')
 print(f'O dobro de {v} é {moeda.dobro(v)}.')
-print(f'Aumentando 10%, temos {moeda.aumentando(v, 10)}.')
+print(f'Aumentando 10%, temos {moeda.aumentar(v, 10)}.')
 print()
