@@ -79,10 +79,35 @@ print(f'{f"O {nome} tem {idade} anos.":^40}') # Utilizando formatação com inte
 
 # OBS: Usando F-String ou .format() não é possível formatar utilizando "{:^10}" em valores que não sejam strings é preciso converter.
 
+# ======================================================================================================================
+
 
 
 # Forma de centralizar impressões com a função .center()
 # EX:
 print('~' * 60)
 print('Este Texto está centralizado com o .center()!'.center(60))
+print('~' * 60)
+
+
+# Forma de separar(tabular) valores dentro de um print com o \t e \n
+# O \t é para tabulação e \n para quebra de linha.
+# EX:
+print('~' * 60)
+print('Este "valor" está tabulado com o \'\ t\': \tvalor') # o \t é para tabulação. e o \' é para mostrar as aspas simples.
+print('~' * 60)
+
+
+# Formatando um print() com a função .ljust() e .rjust()
+# EX:
+print('~' * 60)
+print('Este "valor" está alinhado a esquerda com o .ljust()'.ljust(60))
+print('Este "valor" está alinhado a direita com o .rjust()'.rjust(60))
+print('~' * 60)
+
+
+# Formatando um print() com f-strings
+# EX:
+print('~' * 60)
+print(f'{"Título alinhado a esquerda":<30} {"Valor alinhado a direita":>30}')
 print('~' * 60)
