@@ -33,3 +33,21 @@ def contador(i, f, p):
 
 # Chamando a DocString Criada a cima.
 print(contador.__doc__)
+
+
+
+# Como criar DocStrings dentro de pacotes e módulos?
+# ================================================ #
+
+# Para criar um docstring, basta utilizar a palavra-chave ''' ou """ dentro do código.
+# A palavra-chave ''' ou """ é utilizada para delimitar o docstring.
+
+# Ela pode ser criada no inicio do arquivo, ou dentro de uma função.
+# E ela pode ser utilizada para criar um docstring de uma função, variável, classe, etc.
+
+
+# Exemplo de docstring criado no inicio do arquivo.
+# '''
+# -> Este módulo/pacote contem funções de calculo monetário.
+# # Foi criado por: Tiago
+# '''
