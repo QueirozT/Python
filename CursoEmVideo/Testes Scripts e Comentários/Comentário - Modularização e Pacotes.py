@@ -33,6 +33,7 @@
 
 # ====================================================================================================================== #
 
+
 # PACOTES OU BIBLIOTECAS: É um conjunto de módulos.
 
 # Os pacotes ou Bibliotecas são mais uma forma de organizar o programa, separando os módulos em pastas.
@@ -68,3 +69,22 @@
 # EX:
 # from pacote import numeros
 # numeros.função()
+
+# ====================================================================================================================== #
+
+
+# Como criar DocStrings dentro de pacotes e módulos?
+# ================================================ #
+
+# Para criar um docstring, basta utilizar a palavra-chave ''' ou """ dentro do código.
+# A palavra-chave ''' ou """ é utilizada para delimitar o docstring.
+
+# Ela pode ser criada no inicio do arquivo, ou dentro de uma função.
+# E ela pode ser utilizada para criar um docstring de uma função, variável, classe, etc.
+
+
+# Exemplo de docstring criado no inicio do arquivo.
+# '''
+# -> Este módulo/pacote contem funções de calculo monetário.
+# # Foi criado por: Tiago
+# '''
