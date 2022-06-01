@@ -1,5 +1,5 @@
-def valor(txt):
-    return f'R${txt:.2f}'
+def moeda(val=0, moeda='R$'):
+    return f'{moeda}{val:.2f}'.replace('.', ',')
 
 
 def metade(val=0):
