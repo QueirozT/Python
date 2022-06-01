@@ -1,3 +1,11 @@
+"""
+-> Modulo de calculo de moedas.
+- Este módulo contém funções responsáveis por calcular e formatar valores monetários.
+- Ele está dentro do pacote ex110 e é importado em CursoEmVideo\Exercicios\ex110\moeda\__init__.py
+# Criado por: Tiago.
+"""
+
+
 def moeda(val=0, moeda='R$'):
     """
     -> Função para formatar moeda
