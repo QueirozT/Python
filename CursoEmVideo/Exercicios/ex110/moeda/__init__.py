@@ -59,12 +59,12 @@ def diminuir(val=0, porc=0, show=False):
     return resp if not show else moeda(resp)
 
 
-def resumo(val=0, porc1=0, porc2=0):
+def resumo(val=0, porc1=10, porc2=5):
     """
     -> Função que retorna o resumo formatado de um valor
     :val = Valor a ser calculado
-    :porc1 = Porcentagem de aumento a ser calculada
-    :porc2 = Porcentagem de decremento a ser calculada
+    :porc1 = (Opcional) Porcentagem de aumento a ser calculada
+    :porc2 = (Opcional) Porcentagem de decremento a ser calculada
     :return: Retorna o resumo formatado.
     # Criado por: Tiago.
     """
