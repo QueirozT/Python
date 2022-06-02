@@ -12,7 +12,7 @@
 # EXEMPLO 01:
 print('EXEMPLO 01:')
 try:
-    print(x)
+    print('x'+2)
 except: # Tratando uma excessão genérica.
     print('Um erro foi encontrado!')
 
@@ -28,9 +28,9 @@ except: # Tratando uma excessão genérica.
 # EXEMPLO 02:
 print('\nEXEMPLO 02:')
 try:
-    print(x)
-except NameError: # Tratando uma excessão específica.
-    print('Um NameError foi encontrado!')
+    print('x'+2)
+except TypeError: # Tratando uma excessão específica.
+    print('Um TypeError foi encontrado!')
 
 
 
@@ -44,7 +44,7 @@ except NameError: # Tratando uma excessão específica.
 # EXEMPLO 03:
 print('\nEXEMPLO 03:')
 try:
-    print(x)
+    print('x'+2)
 except Exception as erro: # Tratando a excessão e mostrando a mensagem de erro detalhada. 
     print(f'O erro "{erro}" foi encontrado!')
 
@@ -60,9 +60,9 @@ except Exception as erro: # Tratando a excessão e mostrando a mensagem de erro 
 # EXEMPLO 04:
 print('\nEXEMPLO 04:')
 try:
-    print(x)
-except NameError: # Tratando uma excessão específica
-    print('Um NameError foi encontrado!')
+    print('x'+2)
+except TypeError: # Tratando uma excessão específica
+    print('Um TypeError foi encontrado!')
 except Exception as erro: # Tratando uma excessão genérica e mostrando a mensagem de erro detalhada
     print(f'O erro "{erro}" foi encontrado!')
  
@@ -88,7 +88,7 @@ except Exception as erro: # Tratando uma excessão genérica e mostrando a mensa
 # EXEMPLO 05:
 print('\nEXEMPLO 05:')
 try:
-    print(x)
+    print('x'+2)
 except NameError:
     print('Um NameError aconteceu!')
 except Exception as erro:
@@ -108,7 +108,7 @@ finally:
 # EXEMPLO 06:
 print('\nEXEMPLO 06:')
 try:
-    print(x)
+    print(2/0)
 except Exception as erro: # Tratando uma excessão genérica e mostrando a mensagem de erro detalhada (o 'as' é para referenciar a excessão).
     print(f'O erro "{erro}" foi encontrado!')
 
@@ -122,7 +122,7 @@ except Exception as erro: # Tratando uma excessão genérica e mostrando a mensa
 # EXEMPLO 07:
 print('\nEXEMPLO 07:')
 try:
-    print(x)
+    print('x'+2)
 except Exception as erro: # Tratando uma excessão genérica e referenciando como 'erro'
     print(f'Um erro de "{erro.__class__}" foi encontrado!') # Verificando o tipo de 'erro' através do método '__class__'.
 
