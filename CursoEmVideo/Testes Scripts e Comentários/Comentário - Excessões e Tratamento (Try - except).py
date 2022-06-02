@@ -9,11 +9,12 @@
 # Para tratar uma excessão, utilizamos o bloco try/except.
 # O bloco try é onde colocamos o código que queremos que seja executado.
 # O bloco except é onde colocamos o código que será executado caso ocorra algum erro.
-# EXEMPLO:
+# EXEMPLO 01:
+print('EXEMPLO 01:')
 try:
     print(x)
 except: # Tratando uma excessão genérica.
-    print('Erro!')
+    print('Um erro foi encontrado!')
 
 
 
@@ -24,11 +25,12 @@ except: # Tratando uma excessão genérica.
 # O bloco try é onde colocamos o código que queremos que seja executado.
 # O bloco except é onde colocamos o código que será executado caso ocorra algum erro.
 # Dentro do except, podemos especificar qual excessão queremos tratar.
-# EXEMPLO:
+# EXEMPLO 02:
+print('\nEXEMPLO 02:')
 try:
     print(x)
 except NameError: # Tratando uma excessão específica.
-    print('Erro!')
+    print('Um NameError foi encontrado!')
 
 
 
@@ -39,11 +41,12 @@ except NameError: # Tratando uma excessão específica.
 # O bloco try é onde colocamos o código que queremos que seja executado.
 # O bloco except é onde colocamos o código que será executado caso ocorra algum erro.
 # Dentro do except, podemos utilizar a palavra-chave Exception para capturar a excessão e mostrar a mensagem de erro detalhada.
-# EXEMPLO:
+# EXEMPLO 03:
+print('\nEXEMPLO 03:')
 try:
     print(x)
 except Exception as erro: # Tratando a excessão e mostrando a mensagem de erro detalhada. 
-    print(f'ERRO! {erro}')
+    print(f'O erro "{erro}" foi encontrado!')
 
 
 
@@ -54,13 +57,14 @@ except Exception as erro: # Tratando a excessão e mostrando a mensagem de erro 
 # O bloco try é onde colocamos o código que queremos que seja executado.
 # O bloco except é onde colocamos o código que será executado caso ocorra algum erro.
 # Caso queira tratar mais de uma excessão, basta utilizar a palavra-chave 'except' múltiplas vezes detalhando as excessões.
-# EXEMPLO:
+# EXEMPLO 04:
+print('\nEXEMPLO 04:')
 try:
     print(x)
 except NameError: # Tratando uma excessão específica
-    print('Erro!')
+    print('Um NameError foi encontrado!')
 except Exception as erro: # Tratando uma excessão genérica e mostrando a mensagem de erro detalhada
-    print(f'ERRO! {erro}')
+    print(f'O erro "{erro}" foi encontrado!')
  
 # ====================================================================================================================== #
 
@@ -81,13 +85,14 @@ except Exception as erro: # Tratando uma excessão genérica e mostrando a mensa
 # Caso o bloco try não ocorra nenhum erro, o bloco else é executado, e caso ocorra, o bloco except é executado.
 # Podemos utilizar mais de um bloco except para tratar múltiplas excessões.
 # E o bloco finally é executado independente do resultado do bloco try/except/else, podendo ser utilizado para fechar conexões, etc. 
-# EXEMPLO:
+# EXEMPLO 05:
+print('\nEXEMPLO 05:')
 try:
     print(x)
 except NameError:
-    print('Erro!')
+    print('Um NameError aconteceu!')
 except Exception as erro:
-    print(f'ERRO! {erro}') 
+    print(f'O erro "{erro}" aconteceu!')
 else:
     print('Não ocorreu nenhum erro!')
 finally:
@@ -100,11 +105,12 @@ finally:
 
 # Quando ocorre uma excessão, o Python Utiliza uma classe chamada Exception para representar o erro.
 # Esta classe é uma classe genérica, que pode ser utilizada para representar qualquer erro.
-# EXEMPLO:
+# EXEMPLO 06:
+print('\nEXEMPLO 06:')
 try:
     print(x)
 except Exception as erro: # Tratando uma excessão genérica e mostrando a mensagem de erro detalhada (o 'as' é para referenciar a excessão).
-    print(f'ERRO! {erro}')
+    print(f'O erro "{erro}" foi encontrado!')
 
 
 
@@ -113,13 +119,14 @@ except Exception as erro: # Tratando uma excessão genérica e mostrando a mensa
 
 # Para ver o tipo de erro a partir da classe genéria Exception, utilizamos o método '__class__'.
 # Existem outros métodos para ver o tipo de erro ou outros detalhes, como '__name__' ou'__module__'.
-# EXEMPLO:
+# EXEMPLO 07:
+print('\nEXEMPLO 07:')
 try:
     print(x)
 except Exception as erro: # Tratando uma excessão genérica e referenciando como 'erro'
-    print(f'ERRO! {erro.__class__}') # Verificando o tipo de 'erro' através do método '__class__'.
+    print(f'Um erro de "{erro.__class__}" foi encontrado!') # Verificando o tipo de 'erro' através do método '__class__'.
 
 
-
+print()
 # Uma lista de excessões Python pode ser encontrada em: https://docs.python.org/3/library/exceptions.html
 # ====================================================================================================================== #
