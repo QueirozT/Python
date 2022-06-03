@@ -23,7 +23,7 @@ def tamLista(msg='', tam=0):
     while True:
         val = lerInt(msg)
         
-        if val > tam or val <= 0:
+        if val > tam or val < 0:
             print(f'{cor(2)}Erro! Digite uma opção válida.{cor(0)}')
         else:
             return val
@@ -41,7 +41,7 @@ def lerInt(msg):
             print(f'{cor(0)}', end='')
         except KeyboardInterrupt:
             print(f'{cor(2)}O usuário preferiu não informar a opção...{cor(0)}')
-            return 3
+            return 0
         except:
             print(f'{cor(2)}Erro! Por favor, digite um número inteiro válido.{cor(0)}')
         else:
