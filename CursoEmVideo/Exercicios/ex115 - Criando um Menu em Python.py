@@ -18,7 +18,7 @@ while True:
 
 # Verificando a opção escolhida e chamando a função respectiva.
     if opcao == 1:
-        msg('OPÇÃO 1')
+        lerArquivo(arq) # Chamando a função lerArquivo() para exibir o conteúdo do arquivo.
     elif opcao == 2:
         msg('OPÇÃO 2')
     elif opcao == 3:
