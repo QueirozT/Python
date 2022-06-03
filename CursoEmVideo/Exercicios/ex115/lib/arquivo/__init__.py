@@ -1,3 +1,6 @@
+from ex115.lib.interface import * # Importando as funções da interface para utilizar nos arquivos.
+
+
 def arquivoExiste(nome):
     """
     -> Criando uma função que tenta abrir um arquivo de texto e verifica se ele existe.
@@ -26,3 +29,15 @@ def criarArquivo(nome):
         print('Houve um erro ao criar o arquivo.')
     else:
         print(f'Arquivo "{nome}" criado com sucesso!')
+
+
+def lerArquivo(nome):
+    try:
+        a = open(nome, 'rt') # Tentando abrir um arquivo de texto com os parâmetros "rt" Read Text.
+    except:
+        print('Falha ao ler o arquivo.')
+    else:
+        msg('PESSOAS CADASTRADAS')
+        print(a.read()) # Mostrando tudo que está dentro do arquivo.
+    finally:
+        a.close() # fechando o arquivo.
