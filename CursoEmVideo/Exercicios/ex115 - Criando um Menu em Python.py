@@ -6,10 +6,10 @@ print('===== EXERCÍCIO #115 =====')
 print()
 
 nome = 'Arquivo de Dados.txt' # Adicionando o nome do arquivo a variável.
-arq = f".\CursoEmVideo\Exercicios\ex115\lib\{nome}" # Adicionando o caminho do arquivo a variável.
+local = f".\CursoEmVideo\Exercicios\ex115\lib\{nome}" # Adicionando o caminho do arquivo a variável.
 
-if not arquivoExiste(arq): # Verificando se o arquivo não existe.
-    criarArquivo(arq) # Criando o arquivo.
+if not arquivoExiste(local): # Verificando se o arquivo não existe.
+    criarArquivo(nome, local) # Criando o arquivo.
 
 
 while True:
@@ -18,10 +18,13 @@ while True:
 
 # Verificando a opção escolhida e chamando a função respectiva.
     if opcao == 1:
-        lerArquivo(arq) # Chamando a função lerArquivo() para exibir o conteúdo do arquivo.
+        lerArquivo(local) # Chamando a função lerArquivo() para exibir o conteúdo do arquivo.
     elif opcao == 2:
-        msg('OPÇÃO 2')
-    elif opcao == 3:
+        msg('NOVO CADASTRO')
+        nome = str(input(f'{cor(4)}Nome: {cor(3)}')).strip().title() # Recebendo um Nome
+        idade = lerInt('Idade: ') # Recebendo uma Idade
+        cadastrar(local, nome, idade) # Chamando a função cadastrar() para adicionar o nome e idade ao arquivo.
+    elif opcao == 3 or opcao == 0:
         msg('Saindo do sistema... Até logo!')
         break
     sleep(2)
