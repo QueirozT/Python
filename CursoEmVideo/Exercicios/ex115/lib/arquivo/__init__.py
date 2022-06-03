@@ -32,6 +32,11 @@ def criarArquivo(nome):
 
 
 def lerArquivo(nome):
+    """
+    -> Função que abre um arquivo e mostra o conteúdo do mesmo.
+    :nome = nome do arquivo.
+    :return: o conteúdo do arquivo.
+    """
     try:
         a = open(nome, 'rt') # Tentando abrir um arquivo de texto com os parâmetros "rt" Read Text.
     except:
