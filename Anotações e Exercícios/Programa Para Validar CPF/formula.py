@@ -19,7 +19,9 @@ def validarCPF(list):
         
         digito += 0 if 11 - (soma % 11) > 9 else (11 - (soma % 11))  # Validando o ultimo digito
 
-        if digito == list[9] + list[10]: # Verificando se a soma dos dois ultimos digitos são iguais aos validados.
+        seq = (str(list[0]) * 11) == ''.join(str(x) for x in list)  # Verifica se os 11 digitos são sequenciais.
+
+        if digito == list[9] + list[10] and not seq: # Verificando se a soma dos dois ultimos digitos são iguais aos validados.
             return True
         else:
             return False
@@ -45,7 +47,9 @@ def validadorAlternativo(list):
         else:
             resto = 11 - resto
 
-        if resto == list[10]:
+        seq = (str(list[0]) * 11) == ''.join(str(x) for x in list)  # Verifica se os 11 digitos são sequenciais.
+
+        if resto == list[10] and not seq:
             return True
         else:
             return False
