@@ -33,4 +33,4 @@ def formatCPF(val):
     - val: valor a ser formatado (String)
     - return: valor formatado
     """
-    return '{}.{}.{}-{}'.format(val[0:3], val[3:6], val[6:9], val[9:11])
+    return f'{val[0:3]}.{val[3:6]}.{val[6:9]}-{val[9:11]}'
