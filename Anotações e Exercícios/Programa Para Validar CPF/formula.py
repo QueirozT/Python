@@ -11,7 +11,7 @@ def validarCPF(list):
         for i, v in enumerate(range(10, 1, -1)):
             soma += list[i] * v
         
-        digito = 0 if 11 - (soma % 11) > 9 else (11 - (soma % 11))  # Validando o penultimo digito (quase sempre retorna 0)
+        digito = 0 if 11 - (soma % 11) > 9 else (11 - (soma % 11))  # Validando o penultimo digito
         
         soma = 0
         for i, v in enumerate(range(11, 1, -1)):
@@ -19,7 +19,7 @@ def validarCPF(list):
         
         digito += 0 if 11 - (soma % 11) > 9 else (11 - (soma % 11))  # Validando o ultimo digito
 
-        if digito == list[9] + list[10]:
+        if digito == list[9] + list[10]: # Verificando se a soma dos dois ultimos digitos são iguais aos validados.
             return True
         else:
             return False
