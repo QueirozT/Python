@@ -1,3 +1,5 @@
 Pergunta 01;pergunta:Somando 1 + 1 temos?,respostas:a=2|b=1|c=4|d=3,certa:a
 Pergunta 02;pergunta:Multiplicando 2 * 4 temos?,respostas:a=2|b=6|c=4|d=8,certa:d
 Pergunta 03;pergunta:Qual a raiz quadrada de 36?,respostas:a=7|b=9|c=6|d=5,certa:c
+Pergunta 04;pergunta:Qual a raiz quadrada de 144?,respostas:a=12|b=8|c=6|d=4,certa:a
+Pergunta 05;pergunta:Qual o resultado de 5 * 15 / 7.5?,respostas:a=5|b=7|c=10|d=4,certa:c
