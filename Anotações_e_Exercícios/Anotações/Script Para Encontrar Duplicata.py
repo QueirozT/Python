@@ -4,20 +4,31 @@ Este programa é a solução de um desafio que consiste em iterar valores de lis
 - Caso não exista valores duplicados, será retornado o valor -1.
 """
 
+def dup(lista):
+    """
+    Função que verifica se existem valores duplicados em uma lista e retorna a segunca ocorrência do valor duplicado.
+    - lista: Lista que será verificada.
+    - return: Retorna o valor duplicado ou -1 caso não exista um valor duplicado.
+    """
+    checados = []
+    for valor in lista:
+        if valor in checados:
+            return valor
+        checados.append(valor)
+    return -1
+
 
 def duplicata(lista):
     """
-    Função que verifica se existe valores duplicados em uma lista e retorna a segunda ocorrência do valor duplicado.
+    Função que verifica se existem valores duplicados em uma lista e retorna a segunda ocorrência do valor duplicado.
     - lista: Lista que será verificada.
-    - return: Retorna o valor duplicado ou -1 caso não exista valores duplicados.
+    - return: Retorna o valor duplicado ou -1 caso não exista um valor duplicado.
     """
     val = set()
     c = 0
-    for v in lista:
-        
+    for v in lista:    
         val.add(v)
         c += 1
-        
         if c != len(val):
             return v
     return -1
@@ -37,7 +48,11 @@ lista = [
 ]
 
 print('\nLISTAS COM VALORES DUPLICADOS: -1 PARA NÃO DUPLICADOS.')
-
 for v in enumerate(lista):
     print(f'Lista {v} = {duplicata(v[1]):^3}')  # Imprimindo os valores duplicados em cada lista.
+
+
+print('\nSOLUÇÃO ALTERNATIVA: -1 PARA NÃO DUPLICADOS.')
+for i in lista:
+    print(f'LISTA {i} = {dup(i):>2}')  # Imprimindo os valores duplicados em cada lista.
 print()
