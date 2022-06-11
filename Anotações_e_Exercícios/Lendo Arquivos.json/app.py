@@ -1,6 +1,8 @@
+"""
+Este programa verifica se o usuário quer ver o arquivo.json ou escrever novos dados nele, através das funções de leitura e escrita do módulo arquivo.py
+"""
 from arquivo import escrever_json, perguntas_json  # Importando as funções que estão no arquivo arquivo.py 
 import os  # Importando o módulo os.
-import json  # Importando o módulo json.
 
 caminho = os.path.dirname(os.path.realpath(__file__))  # Pegando o caminho do arquivo atual
 local =  f'{caminho}\pessoas.json'  # Local com o nome do arquivo.json
