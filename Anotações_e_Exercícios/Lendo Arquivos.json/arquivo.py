@@ -2,7 +2,7 @@
 import json # Importando o módulo json.
 
 
-def perguntas_json(local):
+def leitura_json(local):
     """
     Esta função abre um arquivo json e retorna um dicionário com as perguntas e respostas.
     - local: Local do arquivo json.
@@ -20,7 +20,7 @@ def perguntas_json(local):
     return listaDePerguntas
 
 
-def escrever_json(local, perguntas):
+def escrita_json(local, perguntas):
     """
     Esta função escreve as perguntas em um arquivo json, caso o arquivo ainda não exista ele será criado.
     Caso já existam dados no arquivo, a função mescla os valores dos dicionários e atualiza o arquivo.

@@ -1,7 +1,7 @@
 """
 Este programa verifica se o usuário quer ver o arquivo.json ou escrever novos dados nele, através das funções de leitura e escrita do módulo arquivo.py
 """
-from arquivo import escrever_json, perguntas_json  # Importando as funções que estão no arquivo arquivo.py 
+from arquivo import escrita_json, leitura_json  # Importando as funções que estão no arquivo arquivo.py 
 import os  # Importando o módulo os.
 
 caminho = os.path.dirname(os.path.realpath(__file__))  # Pegando o caminho do arquivo atual
@@ -24,7 +24,7 @@ while True:
         continue
     else:
         if opção == 1:
-            dicionario = perguntas_json(local)  # Carregando o arquivo.json já convertido em dicionário.
+            dicionario = leitura_json(local)  # Carregando o arquivo.json já convertido em dicionário.
             
             if not dicionario:  # Verificando se o dicionário está vazio.
                 print('\nNenhum dado encontrado!')
@@ -46,13 +46,13 @@ while True:
                     print(f'ERROR: {e}')
                     continue
                 else:
-                    pessoa = f'Pessoa {len(perguntas_json(local)) + 1}'  # Criando um índice de pessoa nova para o arquivo.json
+                    pessoa = f'Pessoa {len(leitura_json(local)) + 1}'  # Criando um índice de pessoa nova para o arquivo.json
                     
                     dicionario = dict()  # Criando um dicionário vazio para armazenar as respostas.
                     
                     dicionario[pessoa] = {'Nome': nome, 'Idade': idade, 'Sexo': sexo}  # Adicionando a pessoa ao dicionário.
 
-                    escrever_json(local, dicionario)  # Escrevendo os dados do dicionário no arquivo.json
+                    escrita_json(local, dicionario)  # Escrevendo os dados do dicionário no arquivo.json
                     
                     print(f'\n"{pessoa}" Adicionada ao arquivo.json com sucesso!')
 
