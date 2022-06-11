@@ -1,12 +1,13 @@
 # Criando funções para manipular arquivos json.
+import json # Importando o módulo json.
+
+
 def perguntas_json(local):
     """
     Esta função abre um arquivo json e retorna um dicionário com as perguntas e respostas.
     - local: Local do arquivo json.
     - return: Retorna um dicionário com as informações do arquivo.
     """
-    import json  # Importando o módulo json.
-
     listaDePerguntas = dict()  # Criando um dicionário para armazenar as perguntas e respostas.
 
     try:
@@ -28,8 +29,6 @@ def escrever_json(local, perguntas):
     - perguntas: Dicionário com as perguntas e respostas que serão escritas no arquivo.
     - return: None
     """
-    import json  # Importando o módulo json.
-    
     temporario = dict()  # Criando um dicionário temporário para armazenar os valores do arquivo.
     
     try:
