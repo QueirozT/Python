@@ -105,6 +105,23 @@ print('\nExemplo 08: Somando valores com List Comprehensions')
 lista = [('Produto 1', 30), ('Produto 2', 20), ('Produto 3', 50)]
 print('Somando valores com List Comprehensions:\n', sum([v[1] for v in lista]))
 
+
+
+# Como somar valores de duas listas de tamanhos diferentes?
+# ======================================================= #
+
+# Para somar valores de duas listas de tamanhos diferentes existem muitas soluções.
+# Uma delas é criar uma lista com o resultado do tamanho da menor lista.
+# Podemos fazer isso com zip() e list comprehensions.
+# Ou podemos fazer isso com uma condicional composta. 
+# Exemplo 09:
+print('\nExemplo 09: Somando valores de duas listas de tamanhos diferentes')
+l1 = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+l2 = [1, 2, 3, 4, 5]
+print('Somando com zip():\n', [v1 + v2 for v1, v2 in zip(l1, l2)])
+
+print('\nSomando com Condicionais compostas:\n', [l1[v] + l2[v] for v in range(len(l2) if len(l1) >= len(l2) else len(l1))])
+
 # ====================================================================================================================== #
 
 
@@ -116,8 +133,8 @@ print('Somando valores com List Comprehensions:\n', sum([v[1] for v in lista]))
 # Você pode usar dictionary comprehensions para iterar.
 
 # Para iterar sobre um dicionário, basta utilizar chaves {} ao invés de colchetes [], e separar as chaves e valores com dois pontos.
-# Exemplo 09:
-print('\nExemplo 09: Iterando com Compreensão de Dicionários')
+# Exemplo 10:
+print('\nExemplo 10: Iterando com Compreensão de Dicionários')
 dicionario = {'a': 1, 'b': 2, 'c': 3, 'd': 4, 'e': 5}
 print('Multiplicando os valores de um Dicionário:\n', {k: v * 2 for k, v in dicionario.items()})
 
@@ -128,8 +145,8 @@ print('Multiplicando os valores de um Dicionário:\n', {k: v * 2 for k, v in dic
 
 # Para alterar valores de um dicionário, basta utilizar o mesmo padrão de compreensão de listas, informando a chave e o valor.
 # Lembrando que a chave e o valor precisam estar separados por : ou o resultado não será um "dicionário", mas sim um "set".
-# Exemplo 10:
-print('\nExemplo 10: Alterando valores de um Dicionário')
+# Exemplo 11:
+print('\nExemplo 11: Alterando valores de um Dicionário')
 dicionario = {'a': 1, 'b': 2, 'c': 3, 'd': 4, 'e': 5}
 print('Alterando os valores de um Dicionário:\n', {k.upper(): v + 2 for k, v in dicionario.items()})
 
@@ -140,8 +157,8 @@ print('Alterando os valores de um Dicionário:\n', {k.upper(): v + 2 for k, v in
 
 # Para fazer um "cast" dict() e converter uma Lista em um dicionário, a lista precisa conter pares chave/valor.
 # Converter utilizando a compreensão de dicionários te permite fazer alterações que o cast dict() não permite.
-# Exemplo 11:
-print('\nExemplo 11: Convertendo uma Lista em um Dicionário')
+# Exemplo 12:
+print('\nExemplo 12: Convertendo uma Lista em um Dicionário')
 lista = ['a', 'b', 'c', 'd', 'e']
 print('Convertendo uma Lista em um Dicionário:\n', {k: v for k, v in enumerate(lista)})
 
@@ -153,8 +170,8 @@ print('Convertendo uma Lista em um Dicionário:\n', {k: v for k, v in enumerate(
 # Para fazer um "cast" dict() e converter uma Tupla em um dicionário, assim como em listas a tupla precisa conter pares chave/valor.
 # Converter utilizando a compreensão de dicionários te permite fazer alterações que o cast dict() não permite.
 # Também pode criar chaves e valores se a tupla tiver um tamanho resultante em par.
-# Exemplo 12:
-print('\nExemplo 12: Convertendo uma Tupla em um Dicionário')
+# Exemplo 13:
+print('\nExemplo 13: Convertendo uma Tupla em um Dicionário')
 tupla = ('a', 'Maria', 'b', 'Pedro', 'c', 'José')
 print('Convertendo uma Tupla em um Dicionário:\n', {tupla[v]: tupla[v + 1] for v in range(0, len(tupla), 2)})
 
@@ -164,8 +181,8 @@ print('Convertendo uma Tupla em um Dicionário:\n', {tupla[v]: tupla[v + 1] for 
 # =================================================================================== #
 
 # Para criar indices, basta utilizar uma f-string com o nome da chave e o valor que quero que seja o indice.
-# Exemplo 13:
-print('\nExemplo 13: Convertendo uma lista e Criando indices para um Dicionário')
+# Exemplo 14:
+print('\nExemplo 14: Convertendo uma lista e Criando indices para um Dicionário')
 lista = ['Maria', 'Pedro', 'anitha', 'Felipe', 'Roberta']
 print('Convertendo uma lista em um Dicionário:\n', {f'Pessoa {k}': v for k, v in enumerate(lista)})
 print()
