@@ -7,6 +7,10 @@ import os  # Importando o módulo os.
 caminho = os.path.dirname(os.path.realpath(__file__))  # Pegando o caminho do arquivo atual
 local =  f'{caminho}\pessoas.json'  # Local com o nome do arquivo.json
 
+# Forma alternativa de pegar o caminho do arquivo e juntar "os.path.join()" com o nome do arquivo.
+# local = os.path.abspath(os.path.join(os.path.dirname(__file__), 'pessoas.json'))  
+
+
 # Programa para ler o arquivo.json e escrever ou criar um novo caso não exista.
 while True:
     try:
