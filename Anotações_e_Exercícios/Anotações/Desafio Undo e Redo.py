@@ -9,12 +9,11 @@ Ações:
 from time import sleep
 
 tarefas = []
-undo = []
 redo = []
 
 while True:
     print(f'\n{"-" * 30}\n{"Lista de Tarefas":^30}\n{"-" * 30}')
-    print(f'1 - Nova Tarefa\n2 - Visualizar Tarefas\n3 - Desfazer {len(undo) if undo else ""}\n4 - Refazer {len(redo) if redo else ""}\n5 - Sair')
+    print(f'1 - Nova Tarefa\n2 - Visualizar Tarefas\n3 - Desfazer\n4 - Refazer\n5 - Sair')
     
     try:
         opcao = int(input('Digite a opção desejada: ')[0])
@@ -32,7 +31,6 @@ while True:
     if opcao == 1:
         tarefa = input('\nQual a nova tarefa? ').strip().capitalize()
         tarefas.append(tarefa)
-        undo.append(tarefa)
         redo.clear()
         print('Tarefa adicionada com sucesso!')
         sleep(1)
@@ -51,13 +49,12 @@ while True:
         continue
 
     if opcao == 3:
-        if not undo:
+        if not tarefas:
             print('\nNão há tarefas para desfazer!')
             sleep(1)
             continue
         redo.append(tarefas[-1])
         tarefas.pop()
-        undo.pop()
         print(f'\nTarefa desfeita com sucesso!')
         sleep(1)
         continue
@@ -68,7 +65,6 @@ while True:
             sleep(1)
             continue
         tarefas.append(redo[-1])
-        undo.append(redo[-1])
         redo.pop()
         print(f'\nTarefa refeita com sucesso!')
         sleep(1)
