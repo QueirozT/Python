@@ -11,7 +11,7 @@ def validarCNPJ(cnpj):
     - CNPJ: Valor a ser validado.
     - return: True se o CNPJ for válido e False se o CNPJ for inválido
     """
-    if len(cnpj) != 14 or cnpj == '0' * 14:  # Verifica se o CNPJ é válido
+    if len(cnpj) != 14 or cnpj == cnpj[0] * 14:  # Verifica se um CNPJ foi informado e se é um sequêncial.
         return False
 
     cnpj = [int(v) for v in cnpj]  # Cria uma lista de inteiros
@@ -39,7 +39,7 @@ def validarCNPJ(cnpj):
 
 
 def alternativo_ValidarCNPJ(valor):
-    if len(valor) != 14 or valor == '0' * 14:
+    if len(valor) != 14 or valor == valor[0] * 14:
         return False
 
     valor = [int(v) for v in valor]  # Cria uma lista de inteiros
