@@ -11,7 +11,7 @@ def validarCNPJ(valor):
     - valor: CNPJ a ser validado
     - return: True se o CNPJ for válido e False se o CNPJ for inválido
     """
-    if len(valor) != 14:
+    if len(valor) != 14 or valor == '0' * 14:  # Verifica se o CNPJ é válido
         return False
 
     valor = [int(v) for v in valor]  # Cria uma lista de inteiros
@@ -32,14 +32,14 @@ def validarCNPJ(valor):
             if i == 24:
                 CNPJ.append(0 if 11 - (soma % 11) > 9 else 11 - (soma % 11))  # Aplica a fórmula e retorna o último dígito do CNPJ
         c -= 1
-    
+
     if CNPJ == valor:
         return True
     return False
 
 
-def alternativa_ValidaCNPJ(valor):
-    if len(valor) != 14:
+def alternativo_ValidaCNPJ(valor):
+    if len(valor) != 14 or valor == '0' * 14:
         return False
 
     valor = [int(v) for v in valor]  # Cria uma lista de inteiros
@@ -102,6 +102,6 @@ def formata_cnpj(val):
 if __name__ == '__main__':
     valor = recebe_cnpj('\nDigite um CNPJ: ')  # Recebe o CNPJ do usuário
 
-    print(f'\nO CNPJ: {formata_cnpj(valor)} é {"Válido!" if validarCNPJ(valor) else "Inválido!"}\n')
+    print(f'\nO CNPJ: {formata_cnpj(valor)} é {"Válido!" if validarCNPJ(valor) else "Inválido!"}')
     
-    print(f'\nO CNPJ: {formata_cnpj(valor)} é {"Válido!" if alternativa_ValidaCNPJ(valor) else "Inválido!"}\n')
+    print(f'\nO CNPJ: {formata_cnpj(valor)} é {"Válido!" if alternativo_ValidaCNPJ(valor) else "Inválido!"}\n')
