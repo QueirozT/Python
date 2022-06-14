@@ -1,4 +1,4 @@
-def validarCNPJ(valor):
+def validarCNPJ(CNPJ):
     """
     Esta função Valida o CNPJ informado pelo usuário e retorna um valor booleano indicando se o CNPJ é válido ou não.
     - Para validar o CNPJ o algoritmo precisa gerar os dois ultimos dígitos e comparar com o valor informado.
@@ -8,14 +8,14 @@ def validarCNPJ(valor):
         * Para gerar o ultimo dígito:
             Deve multiplicar os 13 dígitos do CNPJ pela sequência "6543298765432" e somar todos os resultados.
             Depois aplicar a fórmula: 11 - (resultado % 11) if > 9 else resultado.
-    - valor: CNPJ a ser validado
+    - CNPJ: Valor a ser validado.
     - return: True se o CNPJ for válido e False se o CNPJ for inválido
     """
-    if len(valor) != 14 or valor == '0' * 14:  # Verifica se o CNPJ é válido
+    if len(CNPJ) != 14 or CNPJ == '0' * 14:  # Verifica se o CNPJ é válido
         return False
 
-    valor = [int(v) for v in valor]  # Cria uma lista de inteiros
-    CNPJ = valor[0:12]  # Cria uma lista com os 12 primeiros dígitos do CNPJ
+    CNPJ = [int(v) for v in CNPJ]  # Cria uma lista de inteiros
+    NOVO_CNPJ = CNPJ[0:12]  # Cria uma lista com os 12 primeiros dígitos do CNPJ
 
     for i in range(25):
         if i == 0 or i == 12:
@@ -24,16 +24,16 @@ def validarCNPJ(valor):
         if c == 1:
             c = 9
         if i < 12:  # Primeiro loop para multiplicar os 12 dígitos do CNPJ pelas sequências "543298765432"
-            soma += CNPJ[i] * c
+            soma += NOVO_CNPJ[i] * c
             if i == 11:
-                CNPJ.append(0 if 11 - (soma % 11) > 9 else 11 - (soma % 11))  # Aplica a fórmula e retorna o penultimo dígito do CNPJ
+                NOVO_CNPJ.append(0 if 11 - (soma % 11) > 9 else 11 - (soma % 11))  # Aplica a fórmula e retorna o penultimo dígito do CNPJ
         else:  # Segundo loop para multiplicar os 13 dígitos do CNPJ pelas sequências "6543298765432"
-            soma += c * CNPJ[i-12]
+            soma += c * NOVO_CNPJ[i-12]
             if i == 24:
-                CNPJ.append(0 if 11 - (soma % 11) > 9 else 11 - (soma % 11))  # Aplica a fórmula e retorna o último dígito do CNPJ
+                NOVO_CNPJ.append(0 if 11 - (soma % 11) > 9 else 11 - (soma % 11))  # Aplica a fórmula e retorna o último dígito do CNPJ
         c -= 1
 
-    if CNPJ == valor:
+    if NOVO_CNPJ == CNPJ:
         return True
     return False
 
