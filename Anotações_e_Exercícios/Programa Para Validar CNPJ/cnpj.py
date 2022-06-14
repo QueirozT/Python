@@ -38,7 +38,7 @@ def validarCNPJ(CNPJ):
     return False
 
 
-def alternativo_ValidaCNPJ(valor):
+def alternativo_ValidarCNPJ(valor):
     if len(valor) != 14 or valor == '0' * 14:
         return False
 
@@ -104,4 +104,4 @@ if __name__ == '__main__':
 
     print(f'\nO CNPJ: {formata_cnpj(valor)} é {"Válido!" if validarCNPJ(valor) else "Inválido!"}')
     
-    print(f'\nO CNPJ: {formata_cnpj(valor)} é {"Válido!" if alternativo_ValidaCNPJ(valor) else "Inválido!"}\n')
+    print(f'\nO CNPJ: {formata_cnpj(valor)} é {"Válido!" if alternativo_ValidarCNPJ(valor) else "Inválido!"}\n')
