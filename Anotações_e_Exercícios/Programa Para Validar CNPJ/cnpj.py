@@ -83,7 +83,7 @@ def recebe_cnpj(msg):
     while True:
         try:
             valor = input(msg).replace('.', '').replace('/', '').replace('-', '')
-            if len(valor) != 14:
+            if len(valor) != 14 or not valor.isnumeric():
                 raise ValueError
         except:
             print('CNPJ Inválido!')
@@ -109,3 +109,4 @@ if __name__ == '__main__':
     print(f'\nO CNPJ: {formata_cnpj(valor)} é {"Válido!" if validarCNPJ(valor) else "Inválido!"}')
     
     print(f'\nO CNPJ: {formata_cnpj(valor)} é {"Válido!" if alternativo_ValidarCNPJ(valor) else "Inválido!"}\n')
+    
