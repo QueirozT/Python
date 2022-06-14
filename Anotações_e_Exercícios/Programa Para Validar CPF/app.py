@@ -1,15 +1,15 @@
-from formula import *
+import cpf
 
 print('Validador de CPF')
 print()
 
-cpf = cpf('Informe o CPF: ')
+cpf_val = cpf.recebe_cpf('Informe o CPF: ')
 print()
 
 print('Primeira função para validar um cpf:')
-msg(f'O CPF informado é {"Válido" if validarCPF(cpf) else "Inválido"}')
+cpf.msg(f'O CPF informado é {"Válido" if cpf.validarCPF(cpf_val) else "Inválido"}')
 print()
 
 print('Segunda função para validar um cpf:')
-msg(f'O CPF informado é {"Válido" if validadorAlternativo(cpf) else "Inválido"}')
+cpf.msg(f'O CPF informado é {"Válido" if cpf.validadorAlternativo(cpf_val) else "Inválido"}')
 print()

@@ -55,7 +55,7 @@ def validadorAlternativo(list):
             return False
 
 
-def cpf(txt):
+def recebe_cpf(txt):
     """
     Função que coleta um cpf do usuário e retorna uma lista com os 11 digitos do cpf.
     - txt: texto que será exibido para o usuário
