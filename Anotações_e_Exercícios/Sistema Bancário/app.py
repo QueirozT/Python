@@ -81,7 +81,7 @@ while True:
                 if op == 3:
                     while True:
                         try:
-                            valor = float(uteis.leitura("Quanto deseja sacar? "))
+                            valor = uteis.leitura("Quanto deseja sacar? ")
                             conta.sacar(valor)
                         except ValueError as e:
                             print(e)
