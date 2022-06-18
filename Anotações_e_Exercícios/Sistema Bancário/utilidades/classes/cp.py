@@ -1,4 +1,4 @@
-from Contas.conta import Conta  # A importação usa a perspectiva do programa principal.
+from utilidades.classes.conta import Conta  # A importação usa a perspectiva do programa principal.
 
 
 class ContaPoupanca(Conta):

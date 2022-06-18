@@ -1,4 +1,4 @@
-from Contas.conta import Conta
+from utilidades.classes.conta import Conta
 
 
 class ContaCorrente(Conta):
