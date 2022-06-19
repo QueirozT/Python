@@ -4,7 +4,7 @@ Módulo responsável pela formatação e entrada de dados do programa.
 Este módulo contém uma função para validar a entrada de dados, para garantir que o usuário irá informar os valores corretamente. e para formatar a saída de dados.
 """
 
-def msg(txt, tam=None, titulo=False):
+def msg(txt: str, tam: int=None, titulo: bool=False) -> None:
     """
     Função que exibe uma mensagem formatada na tela.
 
@@ -28,7 +28,7 @@ def msg(txt, tam=None, titulo=False):
     print("=" * l) if not titulo else None
 
 
-def leitura(txt, max=None):
+def leitura(txt: str, max: int=None) -> float:
     """
     Função que valida a entrada de dados.
 
