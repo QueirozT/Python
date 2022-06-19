@@ -124,7 +124,7 @@ def remover(agencia: str, conta: str) -> None:
         write(dados, literal=True)
 
 
-def buscar(agencia: str, conta: str=None) -> Union(dict, None):
+def buscar(agencia: str, conta: str=None) -> Union[dict, None]:
     """
     Esta função busca as chaves no banco de dados e retorna os valores.
 
