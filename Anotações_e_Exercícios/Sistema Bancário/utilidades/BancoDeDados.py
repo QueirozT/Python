@@ -1,14 +1,31 @@
+"""
+Este módulo contém funções que simulam um banco de dados.
+
+Este módulo contém funções de leitura e escrita e foi criado no intúito de simulam um banco de dados de forma extremamente simples.
+"""
+
 import os
 import json
+from typing import Union  # Importando o Union para mesclar o type hint das funções (Entrada e Saída de dados esperada).
 
 local = os.path.abspath(os.path.join(os.path.dirname(__file__), 'Contas.json'))
 
 
-def write(valor, literal=False):
+def write(valor: dict, literal: bool=False) -> None:
     """
-    Esta função escreve ou atualiza os dados do banco de dados em um arquivo.json
-    - valor: Dados a serem escritos.
-    - literal: (Opcional) Se True, escreve exatamente os dados que receber. se False, só adiciona os novos valores.
+    Função de escrita.
+
+    Esta função simula a escrida de um banco de dados, armazenando valores em um arquivo.json. ela recebe dois parâmetros, os dados em formato de dicionário e um parâmetro opcional que caso verdadeiro permite sobrescrever todos os dados do banco de dados pelos valores informados.
+
+        Parametros:
+            valor (dict):
+                Dados a serem escritos.
+            literal (bool) - Opcional:
+                True - Escreve exatamente os dados que receber, sobrescrevendo os valores do banco de dados. 
+                False (Padrão) - Adiciona os novos valores, atualizando o banco de dados.
+
+        Retorno:
+            None
     """
     arquivo = dict()
     try:
@@ -26,9 +43,14 @@ def write(valor, literal=False):
             f.write(json.dumps(arquivo, indent=True))
 
 
-def read():
+def read() -> dict:
     """
-    Esta função lê o arquivo.json do banco de dados e retorna um dicionário.
+    Função de leitura
+
+    Esta função simula a leitura de um banco de dados. ela abre o arquivo.json, coleta os valores, converte em um dicionário e retorno o dicionário com os valores.
+
+        Retorno:
+            arquivo (dict): Um dicionário com todos os valores do banco de dados.
     """
     arquivo = dict()
     try:
@@ -41,22 +63,33 @@ def read():
     return arquivo
 
 
-def atualizar(agencia, conta, saldo, limite=0):
+def atualizar(agencia: str, conta: str, saldo: float, limite: int=0) -> None:
     """
-    Esta função Atualiza ou adiciona os dados de uma conta ao banco de dados.
-    - agencia: Chave da agência da conta.
-    - conta: Chave do número da conta.
-    - saldo: Valor do saldo da conta.
-    - limite: (Conta-Corrente) Valor do limite da conta.
+    Esta função atualiza o banco de dados.
+
+    Esta função recebe os dados de uma conta, valida o tipo de conta a quem os dados pertencem. abre o banco de dados colentando um dicionário, adiciona os valores da conta ao dicionário e depois escreve os valores novos no banco de dados.
+
+        Parametros:
+            agencia (str):
+                Chave da agência da conta.
+            conta (str):
+                Chave do número da conta.
+            saldo (int, float): 
+                Valor do saldo da conta.
+            limite (int) - Opcional:
+                Valor do limite da conta (Apenas para Conta-Corrente).
+        
+        Retorno:
+            None: Os dados serão validados e adicionados ao banco de dados no momento em que a função for chamada.
     """
-    if limite:
+    if limite:  # Valida o tipo de conta a quem os dados pertencem
         dados = {agencia: {conta: {"agencia": agencia, "conta": conta, "saldo": saldo, "ContaCorrente": {"limite": limite}}}}
     else:
         dados = {agencia: {conta: {"agencia": agencia, "conta": conta, "saldo": saldo, "ContaPoupanca": {"limite": limite}}}}
     
-    bd = read()  # Carrega os dados do banco de dados
+    bd = read()  # Carrega um dicionário com os dados do banco de dados
 
-    if bd.get(agencia):
+    if bd.get(agencia):  # Atualiza o dicionário com os novos dados
         bd[agencia][conta] = dados[agencia][conta]
     else:
         bd.update(dados)
@@ -64,11 +97,20 @@ def atualizar(agencia, conta, saldo, limite=0):
     write(bd)  # Salva os novos dados no banco de dados
     
 
-def remover(agencia, conta):
+def remover(agencia: str, conta: str) -> None:
     """
-    Esta função Remove os dados de uma conta do banco de dados.
-    - agencia: Chave da agência da conta.
-    - conta: Chave do número da conta.
+    Esta função remove dados específicos do banco de dados.
+
+    Esta função recebe duas chaves como parâmetro, uma delas opcional. Verifica se as chaves informados estão no banco de dados e apaga os respectivos dados. depois atualiza o banco de dados com o parâmetro "literal=True" que sobrescreve o banco de dados com os novos valores e exibe uma mensagem. caso as chaves não sejam encontradas, retorna outra mensagem.
+
+        Parametros:
+            agencia (str): 
+                Chave da agência da conta.
+            conta (str) - Opcional:
+                Chave do número da conta.
+        
+        Retorno:
+            None: Exibe uma mensagem de erro ou de sucesso.
     """
     dados = read()
     try:
@@ -82,12 +124,21 @@ def remover(agencia, conta):
         write(dados, literal=True)
 
 
-def buscar(agencia, conta=None):
+def buscar(agencia: str, conta: str=None) -> Union(dict, None):
     """
-    Esta função Busca os dados de uma conta no banco de dados.
-    Se a conta não for especificada, mostra todas as contas da agência.
-    - agencia: Chave da agência da conta.
-    - conta: Chave do número da conta.
+    Esta função busca as chaves no banco de dados e retorna os valores.
+
+    Esta função recebe duas chaves como parâmetro, uma opcional. Verifica se as chaves informadas estão no banco de dados e retorna os dados das respectivas chaves. caso não as encontre, retorna None.
+
+        Parametros:
+            agencia (str):
+                chave da agência da conta
+            conta (str, None) - Opcional:
+                Chave do número da conta.
+                Caso não informado, irá retornar todos os valores da chave da agência.
+
+        Retorno:
+            dict or None: Caso ambas as chaves sejam informadas, retorna um dicionário com os dados da conta. Caso a conta não seja informada, retorna todas as contas da chave agência. E caso os dados não sejam encontrados, retorna None.
     """
     try:
         if conta == None:
@@ -100,10 +151,14 @@ def buscar(agencia, conta=None):
         return None
 
 
-def listar():
+def listar() -> None:
     """
-    Mostra todas as contas do banco de dados.
-    Caso não existam contas, mostra uma mensagem.
+    Esta função lista todas as chaves do banco de dados.
+
+    Esta função coleta o dicionário com os dados do banco de dados e exibe apenas as chaves agência e conta armazenadas. Caso não existam dados armazenados, exibe uma mensagem.
+
+        Retorno:
+            None: Exibe uma mensagem caso não existam dados ou exibe as chaves organizadas por agência -> contas.
     """
     dados = read()
     if dados == {}:
