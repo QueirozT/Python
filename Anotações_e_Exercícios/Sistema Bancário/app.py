@@ -1,7 +1,8 @@
 """
+Desafio POO - Sistema Bancário (Extremamente Simples)
+
 Este programa é a solução para um desafio que consiste em utilizar POO para criar um sistema de contas bancárias.
-Estou utilizando o conceito de herança e polimorfismo para criar classes que representam contas bancárias.
-Também estou criando um módulo que simula um banco de dados e um módulo para as funções de formatação e tratamento de dados.
+Estou utilizando classes, um módulo que simula um banco de dados e um módulo para as funções de formatação e tratamento de dados.
 """
 from utilidades.classes.cc import ContaCorrente
 from utilidades.classes.cp import ContaPoupanca
