@@ -166,7 +166,6 @@ if __name__ == '__main__':
             continue
         if opcao.upper() == 'N':
             if len(arquivos) == 1:  # Verificando se existem arquivos encontrados.
-                print(f'{cor(1)}Finalizando...{cor(0)}\n')
                 break
             
             while True:
@@ -175,7 +174,6 @@ if __name__ == '__main__':
 
                 # Finalizar o programa
                 if opcao.upper() == 'F':
-                    print(f'{cor(1)}Finalizando...{cor(0)}\n')
                     break
 
                 # Copiar o arquivo
@@ -194,8 +192,6 @@ if __name__ == '__main__':
                             caminho_destino = verificar(f'{cor(3)}Informe o caminho de destino: {cor(2)}')
 
                             copiar(caminho_origem, caminho_destino)
-
-                            print(f'\n{cor(1)}Finalizando...{cor(0)}\n')
                             break
                     break
 
@@ -215,8 +211,6 @@ if __name__ == '__main__':
                             caminho_destino = verificar(f'{cor(3)}Informe o caminho de destino: {cor(2)}')
                             
                             mover(caminho_origem, caminho_destino)
-                            
-                            print(f'\n{cor(1)}Finalizando...{cor(0)}\n')
                             break
                     break
 
@@ -239,15 +233,11 @@ if __name__ == '__main__':
 
                             if opcao.upper() == 'S':
                                 remover(caminho_completo)
-                                print(f'\n{cor(1)}Finalizando...{cor(0)}\n')
                                 break
                             if opcao.upper() == 'N':
-                                print(f'\n{cor(1)}Finalizando...{cor(0)}\n')
                                 break
                             print(f'{cor(1)}Opção inválida!{cor(0)}')
                     break
                 print(f'{cor(1)}Opção inválida!{cor(0)}')
             break
-        continue
-
-# C:\Users\tiago\Desktop\FRONT-END
+    print(f'{cor(1)}Finalizando...{cor(0)}\n')
