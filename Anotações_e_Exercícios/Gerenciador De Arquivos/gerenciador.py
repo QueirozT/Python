@@ -7,20 +7,23 @@ Módulos Importados:
     os: Módulo que permite acessar os arquivos do sistema.
         
         Funções:
-            os.walk(caminho): Permite percorrer os diretórios do sistema. (USADO APENAS NO LOCALIZADOR.)
+            os.walk(caminho): Permite percorrer os diretórios do sistema. (USADO NO MÓDULO LOCALIZADOR.)
                 Retorna: (caminho, lista de subdiretórios, lista de arquivos)
+            
+            os.path.splitext(caminho): Permite separar o nome do arquivo e a extensão. (USADO NO MÓDULO LOCALIZADOR.)
+                Retorna: (caminho, extensão)
+            
+            os.path.getsize(caminho): Permite obter o tamanho do arquivo. (USADO NO MÓDULO LOCALIZADOR.)
+                Retorna: Tamanho do arquivo em bytes.
             
             os.path.join(caminho, nome_arquivo): Permite juntar um caminho e um nome de arquivo.
                 Retorna: caminho + nome_arquivo
-            
-            os.path.splitext(caminho): Permite separar o nome do arquivo e a extensão. (USADO APENAS NO LOCALIZADOR.)
-                Retorna: (caminho, extensão)
-            
-            os.path.getsize(caminho): Permite obter o tamanho do arquivo. (USADO APENAS NO LOCALIZADOR.)
-                Retorna: Tamanho do arquivo em bytes.
 
             os.path.exists(caminho): Permite verificar se o caminho existe.
                 Retorna: True se o caminho existe, False se não existe.
+
+            os.remove(caminho_completo): Permite remover um arquivo.
+                Retorna: None
     
     shutil: Módulo que permite manipular arquivos.
 
@@ -30,20 +33,21 @@ Módulos Importados:
 
             shutil.move(caminho_origem, caminho_destino): Permite mover um arquivo.
                 Retorna: None
-
-            shutil.remove(caminho_completo): Permite remover um arquivo.
-                Retorna: None
     
     uteis: Módulo que contém funções úteis para o programa.
-        converte(tamanho): Função que converte de bytes para M, G, etc. (USADO APENAS NO LOCALIZADOR.)
-            Retorna: Tamanho do arquivo convertido em K, M, G, etc.
-        
-        cor(num): Função que retorna uma cor
-            Retorna: Cor do número especificado.
+
+        Funções:
+            converte(tamanho): Função que converte de bytes para M, G, etc. (USADO NO MÓDULO LOCALIZADOR.)
+                Retorna: Tamanho do arquivo convertido em K, M, G, etc.
+            
+            cor(num): Função que retorna uma cor
+                Retorna: Cor do número especificado.
 
     localizador: Módulo que contém as funções do programa de localização de arquivos.
-        localizar(caminho): Função que localiza os arquivos do sistema.
-            Retorna: Lista de caminhos dos arquivos encontrados.
+
+        Funções:
+            localizar(caminho): Função que localiza arquivos através do caminho e parte do nome.
+                Retorna: Lista de caminhos dos arquivos encontrados.
 """
 from localizador import localizador
 from uteis import cor
