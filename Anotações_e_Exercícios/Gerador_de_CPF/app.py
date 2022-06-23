@@ -1,4 +1,4 @@
-from formula import *
+from cpf import *
 from time import sleep
 
 print('GERANDO UM CPF...')
