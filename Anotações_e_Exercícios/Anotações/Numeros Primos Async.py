@@ -57,8 +57,8 @@ async def main():
     """
     Chama a função maior_primo_menor_que.
 
-    Esta função chama a função maior_primo_menor_que multiplas vezes através do asyncio.wait(), Contabilizando o tempo de execução.
-    Cada chamada maior_primo_menor_que é executada de forma assíncrona, então os resultados são impressos de forma assincrona.
+    Esta função chama a função maior_primo_menor_que multiplas vezes através do agregador de corotinas asyncio.gather(), 
+    e contabiliza o tempo de execução. Gracas ao gather que agrega todas as chamadas, elas são executada de forma concorrente assincrona, então os resultados são impressos de forma assincrona.
 
     :return: None
     """
