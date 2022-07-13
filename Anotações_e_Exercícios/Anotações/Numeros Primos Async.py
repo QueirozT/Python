@@ -75,3 +75,7 @@ async def main():
 
 # Executando a função main com o módulo asyncio para que a função seja executada de forma assíncrona.
 asyncio.run(main())
+
+
+# Ps: O resultado esperado é de forma asyncrona, porque a informação está sendo coletada dentro do processo e não na saída dele.
+# A execução do gather funciona de forma concorrente, mas a ordem de resposta é a mesma ordem em que foi chamada.
