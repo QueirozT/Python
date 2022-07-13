@@ -79,3 +79,16 @@ asyncio.run(main())
 
 # Ps: O resultado esperado é de forma asyncrona, porque a informação está sendo coletada dentro do processo e não na saída dele.
 # A execução do gather funciona de forma concorrente, mas a ordem de resposta é a mesma ordem em que foi chamada.
+
+"""
+# Anotação para futura consulta:
+
+Quando precisar rodar uma função assíncrona de forma performatica, usar o uvloop.
+uvloop é um módulo criado em baixo nível que permite a execução de uma função assíncrona em um processo de forma concorrente.
+
+para usar o uvloop, basta trocar as politicas de processamento do asyncio pelo uvloop.
+    pip install uvloop
+    import asyncio
+    import uvloop
+    asyncio.set_event_loop_policy(uvloop.EventLoopPolicy())
+"""
